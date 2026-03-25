@@ -5,27 +5,46 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- SEO Meta Tags -->
-<title>Spécialiste Google Ads Multilingue pour Marques E-Commerce | Notamize</title>
-<meta name="description" content="Spécialiste Google Ads pour e-commerce. Développez votre activité avec des campagnes multilingues en anglais, français et espagnol. Certifiée PPC Mastery. 8+ ans d'expérience.">
-<meta name="keywords" content="spécialiste google ads, e-commerce, ecommerce france, experte ppc multilingue, google ads français, spécialiste ppc">
+<title>Stratégiste en Publicité Digitale pour E-Commerce | Notamize</title>
+<meta name="description" content="Stratégiste en publicité digitale pour e-commerce. Google Ads, Meta, et campagnes multilingues en anglais, français et espagnol. Certifiée PPC Mastery. 8+ ans d'expérience.">
+<meta name="keywords" content="stratégiste publicité digitale, e-commerce, ecommerce france, google ads multilingue, stratégie campagnes payantes">
 
 <!-- Open Graph / Social Media -->
-<meta property="og:title" content="Spécialiste Google Ads Multilingue pour Marques E-Commerce | Notamize">
-<meta property="og:description" content="Développez votre marque E-Commerce avec une spécialiste Google Ads multilingue. Textes publicitaires natifs en anglais, français et espagnol. Certifiée PPC Mastery.">
+<meta property="og:title" content="Stratégiste en Publicité Digitale pour E-Commerce | Notamize">
+<meta property="og:description" content="Développez votre marque e-commerce avec une stratégiste en publicité digitale. Google Ads, Meta et campagnes multilingues en anglais, français et espagnol.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://notamize.com/fr">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1CG8LHW1NW"></script>
+<!-- Axeptio Consent Manager (must load BEFORE GTM) -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-1CG8LHW1NW', {
-    'custom_map': {'dimension1': 'language'},
-    'language': 'fr'
-  });
+window.axeptioSettings = {
+  clientId: "69c449a72612765225d1d6ff",
+  cookiesVersion: "2ee32c34-ad6a-48c0-b23c-20c539e00de7",
+  googleConsentMode: {
+    default: {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    }
+  }
+};
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
 </script>
+<!-- End Axeptio -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
+<!-- End Google Tag Manager -->
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -171,7 +190,131 @@ nav{
 .pain-card p{font-size:.87rem;color:var(--muted);line-height:1.72;font-weight:300}
 
 /* ─── SERVICES ─── */
-.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc-grid-2{grid-template-columns:repeat(2,1fr)}
+
+/* Ongoing management block */
+.svc-ongoing{
+  background:var(--dark);border-radius:22px;padding:3rem;
+  color:#fff;position:relative;overflow:hidden
+}
+.svc-ongoing::before{
+  content:'';position:absolute;top:-40%;right:-20%;width:400px;height:400px;
+  background:var(--cyan);opacity:.06;border-radius:60% 40% 30% 70%/60% 30% 70% 40%;
+  filter:blur(60px)
+}
+.svc-ongoing-inner{
+  display:grid;grid-template-columns:1fr 1fr;gap:2.8rem;
+  position:relative;z-index:1;margin-bottom:2rem
+}
+.svc-ongoing-badge{
+  display:inline-block;font-size:.65rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.18em;
+  color:var(--cyan);border:1px solid rgba(0,201,232,.3);
+  padding:.3rem .7rem;border-radius:50px;margin-bottom:1rem
+}
+.svc-ongoing-content h3{
+  font-size:1.24rem;font-weight:600;margin-bottom:.6rem;
+  font-family:'Jost',sans-serif;color:#fff
+}
+.svc-ongoing-content p{
+  font-size:.87rem;color:rgba(255,255,255,.6);line-height:1.72;
+  font-weight:300;margin-bottom:1rem
+}
+.svc-list{list-style:none;padding:0}
+.svc-list li{
+  font-size:.82rem;color:rgba(255,255,255,.52);line-height:1.6;
+  padding:.35rem 0;padding-left:1.4rem;position:relative;font-weight:300
+}
+.svc-list li::before{
+  content:'';position:absolute;left:0;top:.65rem;
+  width:6px;height:6px;border-radius:50%;background:var(--cyan)
+}
+.svc-ongoing-cta{
+  text-align:center;position:relative;z-index:1;
+  padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.08)
+}
+.svc-ongoing-note{
+  display:block;font-size:.75rem;color:rgba(255,255,255,.4);
+  margin-top:.7rem;font-weight:300
+}
+
+/* Standalone service cards */
+.solo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.solo-card{
+  background:#fff;border-radius:22px;padding:0;
+  box-shadow:0 4px 22px var(--shadow);border:1px solid rgba(208,217,226,.35);
+  transition:transform .3s,box-shadow .3s;
+  display:flex;flex-direction:column;overflow:hidden
+}
+.solo-card:hover{transform:translateY(-4px);box-shadow:0 10px 36px rgba(27,45,62,.12)}
+.solo-header{
+  padding:1.8rem 1.8rem 0;display:flex;justify-content:space-between;
+  align-items:flex-start;gap:1rem
+}
+.solo-header h3{
+  font-size:1.08rem;font-weight:600;line-height:1.3;
+  font-family:'Jost',sans-serif;color:var(--dark)
+}
+.solo-price{
+  font-size:1.6rem;font-weight:700;color:var(--primary);
+  white-space:nowrap;line-height:1
+}
+.solo-timeline{
+  font-size:.72rem;color:var(--cyan);font-weight:500;
+  text-transform:uppercase;letter-spacing:.1em;
+  padding:.6rem 1.8rem 0;margin:0
+}
+.solo-desc{
+  font-size:.85rem;color:var(--muted);line-height:1.72;
+  font-weight:300;padding:.6rem 1.8rem 0;margin:0
+}
+.solo-includes{
+  list-style:none;padding:1.2rem 1.8rem;margin:0;flex:1
+}
+.solo-includes li{
+  font-size:.8rem;color:var(--muted);line-height:1.5;
+  padding:.32rem 0;padding-left:1.2rem;position:relative;font-weight:300
+}
+.solo-includes li::before{
+  content:'';position:absolute;left:0;top:.55rem;
+  width:5px;height:5px;border-radius:50%;background:var(--cyan)
+}
+.solo-cta{
+  display:block;text-align:center;padding:1rem 1.8rem;
+  background:var(--beige);color:var(--primary);
+  font-size:.82rem;font-weight:600;text-decoration:none;
+  transition:background .3s,color .3s;
+  border-top:1px solid rgba(208,217,226,.35)
+}
+.solo-cta:hover{background:var(--primary);color:#fff}
+
+/* Bundle bar */
+.solo-bundle{
+  margin-top:1.4rem;background:#fff;border-radius:22px;
+  padding:2rem 2.4rem;
+  box-shadow:0 4px 22px var(--shadow);
+  border:2px solid var(--primary)
+}
+.solo-bundle-inner{
+  display:flex;justify-content:space-between;align-items:center;gap:2rem
+}
+.solo-bundle h3{
+  font-size:1.18rem;font-weight:600;color:var(--dark);
+  margin-bottom:.4rem;font-family:'Jost',sans-serif
+}
+.solo-bundle p{
+  font-size:.85rem;color:var(--muted);line-height:1.6;
+  font-weight:300;max-width:480px;margin:0
+}
+.solo-bundle-pricing{text-align:center;flex-shrink:0}
+.solo-bundle-price{
+  font-size:2.2rem;font-weight:700;color:var(--primary);line-height:1
+}
+.solo-bundle-save{
+  font-size:.72rem;font-weight:600;color:var(--cyan);
+  text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem
+}
 .svc-card{
   background:#fff;border-radius:22px;padding:2.6rem;position:relative;overflow:hidden;
   box-shadow:0 4px 22px var(--shadow);border:1px solid rgba(208,217,226,.35);
@@ -216,6 +359,68 @@ nav{
 .step-num:hover{box-shadow:0 4px 22px rgba(0,201,232,.45)}
 .proc-step h3{font-size:.98rem;font-weight:600;color:#fff;margin-bottom:.4rem;font-family:'Jost',sans-serif}
 .proc-step p{font-size:.82rem;color:rgba(255,255,255,.52);line-height:1.62;font-weight:300}
+
+/* ─── ABOUT ─── */
+.about-section{background:var(--dark);color:#fff;position:relative;overflow:hidden}
+.about-blob{position:absolute;bottom:-30%;right:-15%;width:500px;height:500px;background:var(--violet);opacity:.06;animation-delay:3s}
+.about-inner{max-width:1060px;margin:0 auto;position:relative;z-index:1}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:center}
+.about-section .sec-label{color:var(--cyan)}
+.about-section .sec-label::after{background:rgba(255,255,255,.15)}
+.about-section .sec-title{color:#fff}
+.about-section .sec-title em{color:var(--cyan)}
+.about-photo-wrap{display:flex;justify-content:center;align-items:flex-start;padding-top:.5rem}
+.about-photo{
+  width:100%;max-width:320px;border-radius:24px;
+  object-fit:cover;aspect-ratio:4/5;
+  border:2px solid rgba(255,255,255,.08);
+  box-shadow:0 20px 60px rgba(0,0,0,.4)
+}
+.about-text{font-size:.9rem;color:rgba(255,255,255,.6);line-height:1.78;font-weight:300;margin-bottom:1rem}
+.about-credentials{display:flex;gap:1.6rem;margin:2rem 0;padding:1.6rem 0;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.about-cred{text-align:center;flex:1}
+.cred-val{font-size:1.8rem;font-weight:700;color:#fff;line-height:1}
+.cred-lbl{font-size:.68rem;color:rgba(255,255,255,.4);margin-top:.3rem;text-transform:uppercase;letter-spacing:.08em;font-weight:400}
+.about-badges{display:flex;gap:.5rem;flex-wrap:wrap}
+.about-badge{display:inline-block;font-size:.68rem;font-weight:500;color:var(--cyan);border:1px solid rgba(0,201,232,.25);padding:.35rem .8rem;border-radius:50px;letter-spacing:.04em}
+
+/* ─── CASE STUDIES ─── */
+.cs-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+.cs-card{
+  background:#fff;border-radius:22px;padding:2.4rem;
+  box-shadow:0 4px 22px var(--shadow);border:1px solid rgba(208,217,226,.35);
+  transition:transform .3s,box-shadow .3s;
+  display:flex;flex-direction:column
+}
+.cs-card:hover{transform:translateY(-4px);box-shadow:0 10px 36px rgba(27,45,62,.12)}
+.cs-tag{
+  display:inline-block;font-size:.68rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:.15em;
+  color:var(--primary);background:rgba(43,90,124,.08);
+  padding:.35rem .85rem;border-radius:50px;margin-bottom:1rem;
+  align-self:flex-start
+}
+.cs-tag-alert{color:#B78700;background:rgba(183,135,0,.1)}
+.cs-card h3{
+  font-size:1.18rem;font-weight:600;line-height:1.35;
+  margin-bottom:.7rem;font-family:'Jost',sans-serif;color:var(--dark)
+}
+.cs-desc{font-size:.85rem;color:var(--muted);line-height:1.72;font-weight:300;margin-bottom:1.4rem;flex:1}
+.cs-metrics{
+  display:flex;gap:1rem;padding:1.2rem 0;
+  border-top:1px solid var(--sand);border-bottom:1px solid var(--sand);
+  margin-bottom:1rem
+}
+.cs-metric{flex:1;text-align:center}
+.cs-metric-val{font-size:1.5rem;font-weight:700;line-height:1.2;color:var(--dark)}
+.cs-metric-val.cs-positive{color:var(--primary)}
+.cs-metric-val.cs-negative{color:#B78700}
+.cs-metric-lbl{font-size:.68rem;color:var(--muted);margin-top:.2rem;font-weight:400;text-transform:uppercase;letter-spacing:.04em}
+.cs-insight{
+  font-size:.82rem;color:var(--muted);font-style:italic;
+  font-weight:300;line-height:1.6;
+  padding-left:.9rem;border-left:2px solid var(--cyan)
+}
 
 /* ─── TESTIMONIALS ─── */
 .testimonials-section{background:var(--beige)}
@@ -288,6 +493,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   .hero-visual{display:none}
   .pain-grid{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:1fr}
+  .cs-grid{grid-template-columns:1fr}
   .proc-grid{grid-template-columns:repeat(2,1fr)}
   .proc-grid::before{display:none}
 }
@@ -301,9 +507,48 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   .test-grid{grid-template-columns:repeat(2,1fr)}
   .test-card{padding:1.3rem}
 }
+
+/* ─── CONTACT FORM ─── */
+.contact-section{background:var(--beige)}
+.contact-form{max-width:620px;margin:2.4rem auto 0;display:grid;gap:1.2rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.form-group{display:flex;flex-direction:column;gap:.4rem}
+.form-group label{font-size:.78rem;font-weight:500;color:var(--dark);text-transform:uppercase;letter-spacing:.12em}
+.form-group input,.form-group textarea{
+  padding:.8rem 1rem;border:1px solid var(--sand);border-radius:8px;
+  background:#fff;color:var(--dark);font-family:'Jost',sans-serif;
+  font-size:.95rem;font-weight:300;transition:border-color .25s,box-shadow .25s;
+  outline:none
+}
+.form-group input:focus,.form-group textarea:focus{
+  border-color:var(--primary);box-shadow:0 0 0 3px rgba(43,90,124,.1)
+}
+.form-group textarea{resize:vertical;min-height:120px}
+.form-submit{
+  padding:.9rem 2.2rem;background:var(--primary);color:#fff;
+  border:none;border-radius:50px;font-family:'Jost',sans-serif;
+  font-size:.92rem;font-weight:500;cursor:pointer;letter-spacing:.04em;
+  transition:background .3s,transform .2s,box-shadow .3s;align-self:flex-start
+}
+.form-submit:hover{background:var(--primary-lt);box-shadow:0 6px 24px rgba(43,90,124,.34);transform:translateY(-2px)}
+.form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-success{
+  display:none;max-width:620px;margin:0 auto;padding:1.4rem 1.8rem;
+  background:#e8f5e9;border:1px solid #a5d6a7;border-radius:10px;
+  color:#2e7d32;font-size:.94rem;text-align:center
+}
+.form-error{
+  display:none;padding:1rem 1.2rem;background:#fce4ec;
+  border:1px solid #f48fb1;border-radius:8px;color:#c62828;font-size:.88rem
+}
+@media(max-width:580px){.form-row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZFLCBDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- NAV -->
 <nav>
@@ -316,7 +561,10 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
     </div>
     <a href="#services" class="nav-pill">Services</a>
     <a href="#process" class="nav-pill">Processus</a>
+    <a href="#results" class="nav-pill">R&eacute;sultats</a>
+    <a href="#about" class="nav-pill">À propos</a>
     <a href="#reviews" class="nav-pill">Avis</a>
+    <a href="#contact" class="nav-pill">Contact</a>
     <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank">Audit Gratuit</a>
   </div>
 </nav>
@@ -328,18 +576,18 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   <div class="blob blob-3"></div>
   <div class="hero-inner">
     <div class="hero-content">
-      <div class="hero-tag"><span class="td"></span>Spécialiste PPC Multilingue · Basée en France</div>
+      <div class="hero-tag"><span class="td"></span>Spécialiste Google Ads Multilingue · Basée en France</div>
       <h1>Chaque euro<br>mérite de<br><em>performer.</em></h1>
-      <p class="hero-sub">Je suis Mafer — une spécialiste certifiée Google Ads qui parle la langue de vos clients. Littéralement. Des campagnes natives en anglais, français et espagnol pour les marques E-commerce qui exigent de vrais résultats.</p>
+      <p class="hero-sub">Je suis Mafer, une stratégiste en publicité digitale qui parle la langue de vos clients. Littéralement. Google Ads est ma base. Meta, LinkedIn et Bing quand le projet le demande. Stratégie, audits et croissance multicanal en anglais, français et espagnol.</p>
       <div class="hero-btns">
         <a href="https://tidycal.com/maferchang/30-minute-meeting" class="btn-primary" target="_blank">Obtenir un Audit Gratuit</a>
         <a href="#services" class="btn-ghost">Découvrir les services <span class="arr">→</span></a>
       </div>
     </div>
     <div class="hero-visual">
-      <div class="h-stat"><div class="h-stat-val">4<span>×</span> ROAS</div><div class="h-stat-lbl">Retour sur investissement publicitaire moyen</div></div>
+      <div class="h-stat"><div class="h-stat-val">4<span>×</span></div><div class="h-stat-lbl">En moyenne — pour chaque €1 investis en pub, €4 de CA</div></div>
       <div class="h-stat"><div class="h-stat-val">€250<span>k+</span></div><div class="h-stat-lbl">Budget publicitaire géré annuellement</div></div>
-      <div class="h-stat"><div class="h-stat-val">3 <span style="font-size:1.4rem">langues</span></div><div class="h-stat-lbl">EN · FR · ES — maîtrise native</div></div>
+      <div class="h-stat"><div class="h-stat-val">3 <span style="font-size:1.4rem">langues</span></div><div class="h-stat-lbl">EN · FR · ES · maîtrise native</div></div>
     </div>
   </div>
 </section>
@@ -354,7 +602,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
     </div>
     <div class="pain-grid">
       <div class="pain-card reveal" data-d="1"><div class="pain-icon cyan">💸</div><h3>Budget Gaspillé</h3><p>Des campagnes qui semblent parfaites dans les rapports mais qui creusent votre budget en silence. Des clics qui ne deviennent jamais des clients.</p></div>
-      <div class="pain-card reveal" data-d="2"><div class="pain-icon magenta">🌍</div><h3>Perdu dans la Traduction</h3><p>Google Translate n'est pas de la localisation. Les clients/acteurs locaux détectent instantanément quand un texte publicitaire sonne faux — et ils partent.</p></div>
+      <div class="pain-card reveal" data-d="2"><div class="pain-icon magenta">🌍</div><h3>Perdu dans la Traduction</h3><p>Google Translate n'est pas de la localisation. Les clients/acteurs locaux détectent instantanément quand un texte publicitaire sonne faux. Et ils partent.</p></div>
       <div class="pain-card reveal" data-d="3"><div class="pain-icon violet">👻</div><h3>Agence Fantôme</h3><p>Le premier mois est magique. Au troisième mois, vous parlez à quelqu'un de nouveau. Le spécialiste qui avait gagné votre confiance a disparu.</p></div>
     </div>
   </div>
@@ -366,13 +614,119 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
     <div class="reveal">
       <div class="sec-label">Services</div>
       <h2 class="sec-title">Conçus pour <em>développer</em><br>votre entreprise</h2>
-      <p class="sec-sub">Chaque service est construit autour d'un principe : votre budget doit travailler plus intelligemment, pas juste plus gros.</p>
+      <p class="sec-sub">Chaque service repose sur un principe : votre budget doit travailler plus intelligemment, pas juste plus fort.</p>
     </div>
-    <div class="svc-grid">
-      <div class="svc-card reveal" data-d="1"><span class="svc-num">01</span><h3>Stratégie Google Ads</h3><p>Stratégie de campagne basée sur les données, adaptée à vos marchés cibles. Direction claire, objectifs mesurables, zéro approximation.</p></div>
-      <div class="svc-card reveal" data-d="2"><span class="svc-num">02</span><h3>Création de Campagnes</h3><p>Campagnes performantes lancées avec un ciblage précis, des textes publicitaires multilingues et un tracking fiable dès le premier jour.</p></div>
-      <div class="svc-card reveal" data-d="1"><span class="svc-num">03</span><h3>Audit de Compte Gratuit</h3><p>Un regard détaillé sur où va vraiment votre argent. Identifiez les fuites, les gains rapides et les opportunités inexploitées.</p></div>
-      <div class="svc-card reveal" data-d="2"><span class="svc-num">04</span><h3>Gestion Continue</h3><p>Cycles d'optimisation continus — textes, enchères, ciblage — affinés jusqu'à ce que votre CTR, CPA et ROAS évoluent tous dans la bonne direction.</p></div>
+    <!-- Gestion continue -->
+    <div class="svc-ongoing reveal">
+      <div class="svc-ongoing-inner">
+        <div class="svc-ongoing-content">
+          <div class="svc-ongoing-badge">Continu</div>
+          <h3>Gestion Google Ads</h3>
+          <p>Campagnes Search, Shopping, PMax et Display créées et optimisées pour un vrai ROAS. Des marques mono-marché aux grandes structures MCC multi-comptes.</p>
+          <ul class="svc-list">
+            <li>Optimisation continue et gestion des enchères</li>
+            <li>Reporting de performance hebdomadaire</li>
+            <li>Analyse des termes de recherche et gestion des mots-clés négatifs</li>
+            <li>Tests de textes publicitaires et optimisation RSA</li>
+            <li>Accès direct à moi. Pas d'intermédiaire.</li>
+          </ul>
+        </div>
+        <div class="svc-ongoing-content">
+          <div class="svc-ongoing-badge">Continu</div>
+          <h3>Lancement de Campagnes Multilingues</h3>
+          <p>Expansion vers de nouveaux marchés ? Textes publicitaires et stratégie au niveau natif en anglais, français et espagnol. Pas des traductions. De vraies campagnes construites pour chaque culture.</p>
+          <ul class="svc-list">
+            <li>Recherche de marché et localisation des mots-clés</li>
+            <li>Textes publicitaires natifs en 3+ langues</li>
+            <li>Ciblage géographique et adaptation culturelle</li>
+            <li>Suivi des conversions par marché</li>
+            <li>Benchmark de performance cross-marchés</li>
+          </ul>
+        </div>
+      </div>
+      <div class="svc-ongoing-cta">
+        <a href="https://tidycal.com/maferchang/30-minute-meeting" class="btn-primary" target="_blank">Commencer une conversation</a>
+        <span class="svc-ongoing-note">Retainer mensuel. Sans engagement. Résiliable à tout moment.</span>
+      </div>
+    </div>
+
+    <!-- Services ponctuels -->
+    <div class="reveal" style="margin-top:4rem">
+      <h2 class="sec-title" style="font-size:clamp(1.6rem,3.5vw,2.2rem)">Besoin d'une <em>victoire rapide</em><br>avant de vous engager ?</h2>
+      <p class="sec-sub">Prix fixe. Livrables clairs. Aucun engagement continu requis.</p>
+    </div>
+
+    <div class="solo-grid">
+
+      <div class="solo-card reveal" data-d="1">
+        <div class="solo-header">
+          <h3>Audit Page d'Atterrissage &amp; Conversion</h3>
+          <div class="solo-price">&euro;350</div>
+        </div>
+        <p class="solo-timeline">Livré en 3 jours ouvrés</p>
+        <p class="solo-desc">Vos annonces ne valent que ce que vaut la page sur laquelle elles atterrissent. Obtenez une évaluation scorée avec des corrections prioritaires pour transformer plus de clics en clients.</p>
+        <ul class="solo-includes">
+          <li>Checklist de conversion en 50 points</li>
+          <li>Analyse desktop et mobile</li>
+          <li>Revue PageSpeed et Core Web Vitals</li>
+          <li>Identification des points de friction</li>
+          <li>Top 5 des corrections prioritaires</li>
+          <li>Blueprint de page avec recommandations</li>
+        </ul>
+        <a href="https://tidycal.com/maferchang/30-minute-meeting" class="solo-cta" target="_blank">Auditer ma page</a>
+      </div>
+
+      <div class="solo-card reveal" data-d="2">
+        <div class="solo-header">
+          <h3>Rapport Intelligence Concurrentielle</h3>
+          <div class="solo-price">&euro;750</div>
+        </div>
+        <p class="solo-timeline">Livré en 7 jours ouvrés</p>
+        <p class="solo-desc">Sachez exactement ce que font vos concurrents, sur quoi ils enchérissent et ce qu'ils disent. Trouvez les lacunes qu'ils manquent et les opportunités qui vous attendent.</p>
+        <ul class="solo-includes">
+          <li>Analyse des annonces de 5 concurrents</li>
+          <li>Matrice de comparaison des messages</li>
+          <li>Analyse des chevauchements et lacunes de mots-clés</li>
+          <li>Carte de positionnement</li>
+          <li>Recommandations stratégiques</li>
+          <li>Rapport PDF professionnel</li>
+        </ul>
+        <a href="https://tidycal.com/maferchang/30-minute-meeting" class="solo-cta" target="_blank">Analyser mes concurrents</a>
+      </div>
+
+      <div class="solo-card reveal" data-d="3">
+        <div class="solo-header">
+          <h3>Audit Compte + Plan d'Action 90 Jours</h3>
+          <div class="solo-price">&euro;900</div>
+        </div>
+        <p class="solo-timeline">Livré en 5 jours ouvrés</p>
+        <p class="solo-desc">Une analyse approfondie de votre compte Google Ads. Trouvez où le budget fuit, ce qui fonctionne, et exactement quoi faire ensuite.</p>
+        <ul class="solo-includes">
+          <li>Revue complète de la structure des campagnes</li>
+          <li>Analyse des dépenses inutiles</li>
+          <li>Vérification du suivi des conversions</li>
+          <li>Audit de la qualité des termes de recherche</li>
+          <li>Plan d'action prioritaire sur 90 jours</li>
+          <li>Appel de présentation de 30 minutes</li>
+        </ul>
+        <a href="https://tidycal.com/maferchang/30-minute-meeting" class="solo-cta" target="_blank">Obtenir mon audit</a>
+      </div>
+
+    </div>
+
+    <!-- Bundle -->
+    <div class="solo-bundle reveal">
+      <div class="solo-bundle-inner">
+        <div>
+          <h3>Les Trois Rapports</h3>
+          <p>Vision complète : santé du compte, performance de la page d'atterrissage et paysage concurrentiel. Idéal avant tout investissement publicitaire majeur.</p>
+        </div>
+        <div class="solo-bundle-pricing">
+          <div class="solo-bundle-price">&euro;1 650</div>
+          <div class="solo-bundle-save">Économisez &euro;350</div>
+          <a href="https://tidycal.com/maferchang/30-minute-meeting" class="btn-primary" target="_blank" style="margin-top:.8rem;font-size:.82rem;padding:.75rem 1.8rem">Obtenir le Pack Complet</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -395,6 +749,114 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   </div>
 </section>
 
+<!-- CASE STUDIES -->
+<section class="section" id="results">
+  <div class="section-inner">
+    <div class="reveal">
+      <div class="sec-label">R&eacute;sultats</div>
+      <h2 class="sec-title">Des comptes r&eacute;els,<br>des <em>r&eacute;sultats</em> r&eacute;els</h2>
+      <p class="sec-sub">Donn&eacute;es anonymis&eacute;es de vrais comptes Google Ads. Pas d'hypoth&egrave;ses. Pas de "jusqu'&agrave;".</p>
+    </div>
+
+    <div class="cs-grid">
+
+      <div class="cs-card reveal" data-d="1">
+        <div class="cs-tag">Textes publicitaires</div>
+        <h3>Refonte des titres d'annonce.<br>Le retour pub a progressé de 57%.</h3>
+        <p class="cs-desc">Une marque D2C avait 15 titres par annonce, la plupart g&eacute;n&eacute;riques. R&eacute;duit &agrave; 8 messages cibl&eacute;s. Ajout de preuve sociale et de garanties. M&ecirc;me budget, m&ecirc;mes pages.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">+57%</div><div class="cs-metric-lbl">Retour pub (March&eacute; 1)</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">+42%</div><div class="cs-metric-lbl">Taux de clic (March&eacute; 2)</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">-14%</div><div class="cs-metric-lbl">Co&ucirc;t par vente</div></div>
+        </div>
+        <div class="cs-insight">Moins de titres = meilleures combinaisons. Chaque annonce &eacute;tait forte.</div>
+      </div>
+
+      <div class="cs-card reveal" data-d="2">
+        <div class="cs-tag cs-tag-alert">Audit PMax</div>
+        <h3>PMax finan&ccedil;ait la notori&eacute;t&eacute;<br>de vos concurrents.</h3>
+        <p class="cs-desc">La campagne PMax d'une marque europ&eacute;enne premium ench&eacute;rissait sur les noms de concurrents. Pour chaque euro d&eacute;pens&eacute;, elle ne rapportait que 19 centimes de CA.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><div class="cs-metric-val cs-negative">0.19x</div><div class="cs-metric-lbl">Retour pub avant correction</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-negative">-96%</div><div class="cs-metric-lbl">Sous l'objectif</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">Corrig&eacute;</div><div class="cs-metric-lbl">Exclusions de marques</div></div>
+        </div>
+        <div class="cs-insight">PMax ne vous dit pas o&ugrave; il d&eacute;pense. C'est &agrave; vous d'aller v&eacute;rifier.</div>
+      </div>
+
+      <div class="cs-card reveal" data-d="3">
+        <div class="cs-tag">Strat&eacute;gie de campagne</div>
+        <h3>Search a battu PMax<br>de 2.5x sur le retour pub.</h3>
+        <p class="cs-desc">M&ecirc;mes produits, m&ecirc;me march&eacute;, m&ecirc;me p&eacute;riode. Une comparaison honn&ecirc;te : Search rapportant 5.52x contre 2.16x pour PMax par euro investi.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">5.52x</div><div class="cs-metric-lbl">Retour Search</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-negative">2.16x</div><div class="cs-metric-lbl">Retour PMax</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-positive">2.5x</div><div class="cs-metric-lbl">Avantage Search</div></div>
+        </div>
+        <div class="cs-insight">PMax n'est pas automatiquement meilleur. Parfois la pr&eacute;cision bat l'automatisation.</div>
+      </div>
+
+      <div class="cs-card reveal" data-d="3">
+        <div class="cs-tag cs-tag-alert">Mythe Ad Strength</div>
+        <h3>"Excellent" Ad Strength.<br>Z&eacute;ro conversions.</h3>
+        <p class="cs-desc">Chaque groupe d'assets avait la note "Excellent". La note la plus haute de Google. R&eacute;sultat : 9 653 impressions, 79 clics, et exactement z&eacute;ro en valeur de conversion.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><div class="cs-metric-val">Excellent</div><div class="cs-metric-lbl">Ad Strength</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-negative">0</div><div class="cs-metric-lbl">Conversions</div></div>
+          <div class="cs-metric"><div class="cs-metric-val cs-negative">0.00</div><div class="cs-metric-lbl">Valeur conv.</div></div>
+        </div>
+        <div class="cs-insight">Ad Strength mesure les inputs, pas les r&eacute;sultats. La note n'est pas la strat&eacute;gie.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about-section" id="about">
+  <div class="blob about-blob"></div>
+  <div class="about-inner">
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <img src="mafer-photo.jpeg" alt="Mafer, Stratégiste en Publicité Digitale" class="about-photo">
+      </div>
+      <div class="about-content reveal">
+        <div class="sec-label">À propos</div>
+        <h2 class="sec-title">Rencontrez <em>Mafer</em></h2>
+        <p class="about-text">J'ai passé 8+ ans dans la publicité digitale, gérant aussi bien des comptes mono-marque que de grandes structures multi-pays en Europe, en Amérique du Nord et en Amérique Latine.</p>
+        <p class="about-text">Avant de devenir indépendante, je gérais des campagnes Google Ads pour une agence spécialisée dans l'e-commerce premium et les marques de luxe sur plusieurs marchés. Cela m'a donné une reconnaissance des patterns cross-sectoriels que la plupart des consultants solo n'ont tout simplement pas.</p>
+        <p class="about-text">Ce qui me différencie ? Je parle la langue de vos clients. Au sens propre. Espagnol natif, anglais courant, français courant. Quand j'écris les textes publicitaires pour votre marché français, ce n'est pas une traduction. C'est rédigé par quelqu'un qui pense dans cette langue.</p>
+
+        <div class="about-credentials">
+          <div class="about-cred">
+            <div class="cred-val">8+</div>
+            <div class="cred-lbl">Années d'expérience</div>
+          </div>
+          <div class="about-cred">
+            <div class="cred-val">3</div>
+            <div class="cred-lbl">Langues</div>
+          </div>
+          <div class="about-cred">
+            <div class="cred-val">3</div>
+            <div class="cred-lbl">Continents</div>
+          </div>
+        </div>
+
+        <div class="about-badges">
+          <div class="about-badge">Certifiée PPC Mastery</div>
+          <div class="about-badge">Membre Ads to AI</div>
+          <div class="about-badge">Google Ads</div>
+          <div class="about-badge">Meta Ads</div>
+          <div class="about-badge">LinkedIn Ads</div>
+          <div class="about-badge">Bing Ads</div>
+        </div>
+
+        <p class="about-text" style="margin-top:1.4rem">Basée en France. Travaillant avec des marques dans le monde entier. Chaque décision appuyée par les données, jamais par les suppositions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="section testimonials-section" id="reviews">
   <div class="section-inner">
@@ -410,10 +872,45 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
       <div class="test-card"><span class="qm">"</span><p class="test-text">Excellente résolution de problèmes, directe avec un sens du détail. La combinaison de compétences techniques, sociales et linguistiques la rend vraiment exceptionnelle.</p><div class="test-author"><div class="author-av">VA</div><div><div class="author-name">Vivien Aroonsangrote</div><div class="author-role">Responsable Succès Client</div></div></div></div>
       <div class="test-card"><span class="qm">"</span><p class="test-text">Une personne agréable avec qui travailler, donc facilement accessible pour les nombreuses questions que j'avais. Elle analyse calmement et implémente rapidement la solution. Son multilinguisme et ses différents horizons culturels en font un atout précieux.</p><div class="test-author"><div class="author-av">SV</div><div><div class="author-name">Sébastien Van Houte</div><div class="author-role">Directeur Commercial, Cortina Group</div></div></div></div>
       <div class="test-card"><span class="qm">"</span><p class="test-text">Maria Fernanda et moi avons travaillé ensemble sur des projets de reporting et visualisation de données. J'ai vraiment apprécié son état d'esprit orienté résultats et son attention aux détails.</p><div class="test-author"><div class="author-av">ED</div><div><div class="author-name">Emilie Danneels</div><div class="author-role">Stratège Marketing Digital Freelance</div></div></div></div>
-      <div class="test-card"><span class="qm">"</span><p class="test-text">Compétences très avancées en gestion de données. Crée des feuilles de route détaillées et des analyses approfondies pour chaque projet. Je recommande vivement.</p><div class="test-author"><div class="author-av">SB</div><div><div class="author-name">Simon Bardyn</div><div class="author-role">Chef de Projet Digital, Nayan</div></div></div></div>
+      <div class="test-card"><span class="qm">"</span><p class="test-text">C'est une sp&eacute;cialiste compl&egrave;te en publicit&eacute; payante ; strat&eacute;giquement et op&eacute;rationnellement solide, mais aussi tr&egrave;s comp&eacute;tente techniquement. Elle a une vaste exp&eacute;rience des campagnes multilingues transfrontali&egrave;res. Ce qui la caract&eacute;rise le plus, c'est qu'elle traite les projets comme s'il s'agissait de sa propre entreprise. Rien n'est de trop pour elle. En bref, je la recommande vivement.</p><div class="test-author"><div class="author-av">DD</div><div><div class="author-name">Didier Deschepper</div><div class="author-role">Expert E-commerce &amp; Marketing Digital</div></div></div></div>
       </div>
       <button class="scroll-btn scroll-btn--next" aria-label="Suivant">&#8250;</button>
     </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center">
+      <div class="sec-label" style="justify-content:center">Contact</div>
+      <h2 class="sec-title" style="text-align:center">Commençons une<br><em>conversation</em></h2>
+      <p class="sec-sub" style="text-align:center;max-width:520px;margin:0 auto">Pas encore prête pour un appel ? Envoyez-moi un message et je vous répondrai sous 24 heures.</p>
+    </div>
+    <form class="contact-form reveal" id="contactForm" name="contact-fr" netlify>
+      <input type="hidden" name="form-name" value="contact-fr">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nom complet *</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="vous@entreprise.com" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">Numéro de téléphone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+33 6 00 00 00 00">
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" placeholder="Parlez-moi de votre projet..." required></textarea>
+      </div>
+      <div class="form-error" id="formError">Une erreur s'est produite. Réessayez ou écrivez-moi à <a href="mailto:info@notamize.com">info@notamize.com</a></div>
+      <button type="submit" class="form-submit" id="formBtn">Envoyer →</button>
+    </form>
+    <div class="form-success" id="formSuccess">✓ Message reçu ! Je vous répondrai sous 24 heures.</div>
   </div>
 </section>
 
@@ -425,7 +922,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
     <div class="reveal">
       <div class="sec-label" style="justify-content:center">Commencer</div>
       <h2 class="sec-title" style="text-align:center">Faisons travailler vos<br>pubs <em>plus intelligemment</em></h2>
-      <p class="cta-sub">Mois par mois, résiliable à tout moment. Sans engagement. Travaillez directement avec moi — pas un account manager. Rapide, transparent, orienté résultats.</p>
+      <p class="cta-sub">Mois par mois, résiliable à tout moment. Sans engagement. Travaillez directement avec moi, pas un account manager. Rapide, transparent, orienté résultats.</p>
       <a href="https://tidycal.com/maferchang/30-minute-meeting" class="btn-primary" target="_blank">Demander un Audit Gratuit</a>
       <div class="cta-guarantee"><span class="shield">🛡️</span>Mois par mois · Résiliable à tout moment · Limité à 3 clients/mois</div>
     </div>
@@ -441,6 +938,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
         <a href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank">LinkedIn</a>
         <a href="mailto:info@notamize.com">Email</a>
         <a href="https://www.facebook.com/profile.php?id=61579275497526" target="_blank">Facebook</a>
+        <a href="privacy-policy-fr.html">Politique de confidentialité</a>
       </div>
     </div>
     <div class="footer-bottom">
@@ -478,6 +976,41 @@ prevBtn.addEventListener('click',()=>grid.scrollBy({left:-220,behavior:'smooth'}
 nextBtn.addEventListener('click',()=>grid.scrollBy({left:220,behavior:'smooth'}));
 grid.addEventListener('scroll',updateScrollBtns);
 updateScrollBtns();
+
+// Contact form — Netlify Forms AJAX
+const contactForm=document.getElementById('contactForm');
+const formBtn=document.getElementById('formBtn');
+const formSuccess=document.getElementById('formSuccess');
+const formError=document.getElementById('formError');
+if(contactForm){
+  contactForm.addEventListener('submit',async function(e){
+    e.preventDefault();
+    formBtn.disabled=true;
+    formBtn.textContent='Envoi…';
+    formError.style.display='none';
+    try{
+      const res=await fetch('/',{
+        method:'POST',
+        headers:{'Content-Type':'application/x-www-form-urlencoded'},
+        body:new URLSearchParams(new FormData(contactForm)).toString()
+      });
+      if(res.ok){
+        contactForm.style.display='none';
+        formSuccess.style.display='block';
+        window.dataLayer=window.dataLayer||[];
+        window.dataLayer.push({event:'contact_form_submit'});
+      }else{
+        formError.style.display='block';
+        formBtn.disabled=false;
+        formBtn.textContent='Envoyer →';
+      }
+    }catch(err){
+      formError.style.display='block';
+      formBtn.disabled=false;
+      formBtn.textContent='Envoyer →';
+    }
+  });
+}
 
 </script>
 </body>
