@@ -46,6 +46,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
 <!-- End Google Tag Manager -->
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
@@ -364,7 +366,7 @@ nav{
 .about-section{background:var(--dark);color:#fff;position:relative;overflow:hidden}
 .about-blob{position:absolute;bottom:-30%;right:-15%;width:500px;height:500px;background:var(--violet);opacity:.06;animation-delay:3s}
 .about-inner{max-width:1060px;margin:0 auto;position:relative;z-index:1}
-.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:4rem;align-items:center}
+.about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:center}
 .about-grid-full{grid-template-columns:1fr;max-width:720px}
 .about-section .sec-label{color:var(--cyan)}
 .about-section .sec-label::after{background:rgba(255,255,255,.15)}
@@ -372,7 +374,7 @@ nav{
 .about-section .sec-title em{color:var(--cyan)}
 .about-photo-wrap{display:flex;justify-content:center;align-items:flex-start;padding-top:.5rem}
 .about-photo{
-  width:100%;max-width:320px;border-radius:24px;
+  width:100%;max-width:400px;border-radius:24px;
   object-fit:cover;aspect-ratio:4/5;
   border:2px solid rgba(255,255,255,.08);
   box-shadow:0 20px 60px rgba(0,0,0,.4)
@@ -506,7 +508,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   .pain-grid{grid-template-columns:1fr}
   .svc-grid{grid-template-columns:repeat(2,1fr)}
   .svc-ongoing-inner{grid-template-columns:1fr}
-  .solo-grid{grid-template-columns:1fr}
+  .solo-grid{grid-template-columns:repeat(2,1fr)}
   .about-grid{grid-template-columns:1fr}
   .solo-bundle-inner{flex-direction:column;text-align:center}
   .solo-bundle p{max-width:100%}
@@ -521,9 +523,20 @@ footer{background:var(--dark);color:rgba(255,255,255,.65);padding:2.8rem 3rem 2r
   .hero{padding:8rem 1.4rem 3.5rem}
   .svc-grid{grid-template-columns:1fr}
   .proc-grid{grid-template-columns:1fr}
-  .footer-inner{flex-direction:column;gap:.8rem;text-align:center}
+  footer{padding:2rem 1.4rem 1.6rem}
+  .footer-top{flex-direction:column;align-items:center;gap:1.2rem;text-align:center}
+  .footer-links{flex-wrap:wrap;justify-content:center;gap:.8rem 1.2rem}
+  .footer-bottom{flex-direction:column;gap:1rem;text-align:center}
+  .footer-partners{justify-content:center}
   .test-grid{grid-template-columns:repeat(2,1fr)}
   .test-card{padding:1.3rem}
+  /* Services mobile fixes */
+  .solo-grid{grid-template-columns:1fr}
+  .svc-ongoing{padding:2rem 1.4rem}
+  .solo-header{flex-wrap:wrap;gap:.5rem}
+  .solo-price{font-size:1.35rem}
+  .solo-bundle{padding:1.4rem 1.2rem}
+  .solo-bundle-inner{gap:1.2rem}
 }
 
 /* ─── CONTACT FORM ─── */
@@ -872,7 +885,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="about-inner">
     <div class="about-grid">
       <div class="about-photo-wrap reveal">
-        <img src="mafer-photo.jpeg" alt="Mafer, Digital Advertising Strategist" class="about-photo">
+        <img src="mafer-photo.jpeg" alt="Mafer, Digital Advertising Strategist" class="about-photo" loading="lazy">
       </div>
       <div class="about-content reveal">
         <div class="sec-label">About</div>
@@ -1000,8 +1013,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="footer-copy">© 2026 Notamize</span>
       <div class="footer-partners">
         <span class="footer-partners-label">Member of</span>
-        <a href="https://www.ppcmastery.com/hub" target="_blank"><img src="ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo"></a>
-        <a href="https://mikerhodes.com.au/?via=maferchang" target="_blank"><img src="adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo"></a>
+        <a href="https://www.ppcmastery.com/hub" target="_blank"><img src="ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo" loading="lazy"></a>
+        <a href="https://mikerhodes.com.au/?via=maferchang" target="_blank"><img src="adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo" loading="lazy"></a>
       </div>
     </div>
   </div>
