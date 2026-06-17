@@ -60,8 +60,8 @@ What sets Notamize apart is genuine multilingual capability. Mafer creates nativ
 ## Important Pages
 
 - [Homepage](https://notamize.com): Main landing page with services, process, and testimonials
-- [Homepage (French)](https://notamize.com/index-fr.html): French version of the site
-- [Homepage (Spanish)](https://notamize.com/index-es.html): Spanish version of the site
+- [Homepage (French)](https://notamize.com/index-fr): French version of the site
+- [Homepage (Spanish)](https://notamize.com/index-es): Spanish version of the site
 
 ## Contact
 
