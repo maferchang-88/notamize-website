@@ -1,0 +1,60 @@
+# notamize.com — robots.txt
+# Canonical host is https://www.notamize.com/
+
+# Default: everything is open to crawlers.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+# Legal pages are noindex at the meta level; no need to crawl them.
+Disallow: /privacy-policy.html
+Disallow: /privacy-policy-fr.html
+Disallow: /privacy-policy-es.html
+Disallow: /mentions-legales.html
+
+# --- AI / LLM crawlers -------------------------------------------------
+# Explicitly allowed. Notamize wants to be cited by AI assistants; that is
+# the whole point of /llms.txt and the JSON-LD on each homepage.
+# Content-Signal above states the intent: answer with this content, but do
+# not use it as model training data.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://www.notamize.com/sitemap.xml

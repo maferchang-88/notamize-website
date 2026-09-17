@@ -1,0 +1,3 @@
+# Clean language paths -> real files (these previously 404'd)
+/fr   /index-fr.html   301
+/es   /index-es.html   301
