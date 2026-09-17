@@ -1111,6 +1111,31 @@ if(contactForm){
   });
 }
 
+
+/* ---- TidyCal booking-CTA click tracking ---------------------------------
+   Every "book a call" link on the site points at tidycal.com and opens in a
+   new tab. TidyCal serves its OWN GA4/GTM (G-MDNVPSWCJ1 / GTM-NTZ7CVBL), so
+   our tag never loads there and a completed booking is not measurable from
+   this property. The click is the last thing we CAN observe, so we track it.
+
+   This deliberately reuses the `cta_click` event that GTM container
+   GTM-TZFLCBDG already consumes (tag "GA4 - Event - cta_click", published in
+   version 5, reading DLV cta_label / cta_href / cta_type). No GTM change is
+   required for this to start reporting. */
+(function(){
+  var links = document.querySelectorAll('a[href*="tidycal.com"]');
+  Array.prototype.forEach.call(links, function(a){
+    a.addEventListener('click', function(){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'cta_click',
+        cta_label: (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100),
+        cta_href: a.getAttribute('href'),
+        cta_type: 'tidycal_booking'
+      });
+    });
+  });
+})();
 </script>
 </body>
 </html>
