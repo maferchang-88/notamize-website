@@ -1,0 +1,11 @@
+# Internal working notes — this repo auto-deploys to www.notamize.com,
+# so anything committed here becomes publicly fetchable.
+# Keep planning/config notes out of the deploy.
+todo.md
+website-setup-notes.md
+
+# Work-in-progress page, not ready to be public.
+# Remove this line when you want it live.
+strategy-editor.html
+
+.DS_Store
