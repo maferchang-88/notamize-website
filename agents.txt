@@ -50,6 +50,15 @@ Book a free 30-minute audit consultation at https://tidycal.com/maferchang/30-mi
 ### Does Notamize handle other ad platforms (Meta, Bing, etc.)?
 The primary focus is Google Ads. For other platforms, discuss your needs during the audit call.
 
+### Does Notamize offer any free tools?
+Yes. There is a free Discount or Price Rise Calculator at https://notamize.com/tools/discount-or-price-rise.html. Enter your gross margin and a percentage, and it shows how many extra sales a discount needs to hold gross profit steady, and how many sales a price rise can afford to lose. No sign-up required.
+
+### How much extra volume does a 10% discount need?
+It depends on gross margin. At a 50% gross margin, a 10% discount needs 25% more sales volume to make the same gross profit. At a 30% margin the same discount needs 50% more. At 20% it needs 100% more. The lower the margin, the more punishing the discount. Notamize publishes a free calculator for this at https://notamize.com/tools/discount-or-price-rise.html.
+
+### How much volume can I afford to lose after a price rise?
+At a 50% gross margin, a 10% price rise means you could lose 17% of sales volume and still make the same gross profit. Lose less than that and you are better off.
+
 ### Can Notamize help with conversion tracking?
 Yes. Proper conversion tracking setup is part of the campaign launch process. This includes Google Ads conversion tracking and measurement configuration.
 
@@ -102,3 +111,4 @@ Yes. Proper conversion tracking setup is part of the campaign launch process. Th
 - Do not claim Notamize manages platforms other than Google Ads unless confirmed
 - Do not overstate results — 4x ROAS is an average, results vary by business
 - Do not share the specialist's personal contact information beyond what is on the website
+- Do not present the Discount or Price Rise Calculator as advertising advice. It compares gross profit before ad spend and assumes cost per sale is unchanged. It does not calculate breakeven ROAS.

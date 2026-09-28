@@ -1,0 +1,483 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO ── -->
+<title>Discount or Price Rise Calculator | Notamize</title>
+<meta name="description" content="Work out how much extra volume a discount has to find, and how much volume a price rise lets you lose, at your gross margin. Free calculator for e-commerce brands.">
+<link rel="canonical" href="https://www.notamize.com/tools/discount-or-price-rise.html">
+<link rel="alternate" hreflang="en" href="https://www.notamize.com/tools/discount-or-price-rise.html">
+<link rel="alternate" hreflang="x-default" href="https://www.notamize.com/tools/discount-or-price-rise.html">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Discount or Price Rise Calculator">
+<meta property="og:description" content="How much extra volume does a discount have to find? How much can a price rise afford to lose? Set your gross margin and see.">
+<meta property="og:url" content="https://www.notamize.com/tools/discount-or-price-rise.html">
+<!-- TODO: replace with a 1200x630 card in tools/assets/ once one exists.
+     Same placeholder convention as the blog articles. -->
+<meta property="og:image" content="https://www.notamize.com/notamize-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ── Axeptio Consent Manager (must load BEFORE GTM) ── -->
+<script>
+window.axeptioSettings = {
+  clientId: "69c449a72612765225d1d6ff",
+  cookiesVersion: "2ee32c34-ad6a-48c0-b23c-20c539e00de7",
+  googleConsentMode: {
+    default: {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    }
+  }
+};
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
+<!-- End Axeptio -->
+
+<!-- ── Google Tag Manager ── -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
+<!-- End Google Tag Manager -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tool.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Discount or Price Rise Calculator",
+  "url": "https://www.notamize.com/tools/discount-or-price-rise.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "description": "Calculates the extra sales volume a discount needs, and the volume a price rise can afford to lose, to hold gross profit steady at a given gross margin.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "author": {
+    "@type": "Person",
+    "name": "Maria Fernanda Chang",
+    "url": "https://www.linkedin.com/in/maria-fernanda-chang-92967751/",
+    "jobTitle": "Digital Advertising Strategist"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Notamize",
+    "url": "https://www.notamize.com",
+    "logo": { "@type": "ImageObject", "url": "https://www.notamize.com/notamize-logo.png" }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much extra volume does a 10% discount need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends entirely on your gross margin. At a 50% gross margin, a 10% discount needs 25% more sales volume to make the same gross profit. At a 30% margin, the same 10% discount needs 50% more. The lower the margin, the more punishing the discount." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much volume can I afford to lose after a price rise?",
+      "acceptedAnswer": { "@type": "Answer", "text": "At a 50% gross margin, a 10% price rise means you could lose 17% of your sales volume and still make the same gross profit. Lose less than that and you are better off, with less work for the same money." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is gross margin?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sales minus the cost of those sales, expressed as a percentage of sales. For an e-commerce brand that usually means revenue minus product cost, and often minus shipping and payment fees. It is on your profit and loss statement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this calculator include advertising cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. It compares gross profit before advertising spend, and assumes your cost per sale stays the same. If you run paid media, a discount also raises the return on ad spend you need to break even, which this calculator does not show." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZFLCBDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- Tools pages are English-only for now, so there is no language switcher.
+     A language pill pointing at a 404 is worse than no pill. -->
+<nav>
+  <a href="../index.html"><img src="../notamize-logo.png" alt="Notamize" class="nav-logo-img"></a>
+  <div class="nav-pills">
+    <a href="../index.html#services" class="nav-pill">Services</a>
+    <a href="../index.html#process" class="nav-pill">Process</a>
+    <a href="../index.html#results" class="nav-pill">Results</a>
+    <a href="../blog/index.html" class="nav-pill">Blog</a>
+    <a href="../index.html#contact" class="nav-pill">Contact</a>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank" rel="noopener">Free Audit</a>
+  </div>
+</nav>
+
+<main class="tool">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> <span aria-hidden="true">›</span>
+    <span aria-current="page">Discount or price rise</span>
+  </nav>
+
+  <header class="tool-head">
+    <span class="tag">Free tool</span>
+    <h1>Should you <span class="cut">discount</span>, or raise your <span class="rise">price</span>?</h1>
+    <p class="standfirst">Set your margin and the percentage you are considering. This works out how many extra sales a discount has to find, and how many a price rise lets you lose, for the same gross profit. Works for an online shop or any business with a cost per sale.</p>
+  </header>
+
+  <div class="controls" role="group" aria-label="Your figures">
+    <div class="ctl">
+      <label for="margin">Your gross margin</label>
+      <div class="ctl-row"><output id="marginOut" for="margin">50</output><span class="unit">%</span></div>
+      <input type="range" id="margin" min="5" max="90" step="1" value="50">
+      <p class="hint">What is left from a sale after what that sale cost you. A shop counts product cost. A service business counts the cost of doing the work. Your P&amp;L has it.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="change">Discount or price rise</label>
+      <div class="ctl-row"><output id="changeOut" for="change">10</output><span class="unit">%</span></div>
+      <input type="range" id="change" min="1" max="30" step="1" value="10">
+      <p class="hint">The same percentage is tested both ways below.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="sales">Your revenue <span class="opt">optional</span></label>
+      <div class="money">
+        <span class="sym cur-sym">€</span>
+        <input id="sales" type="text" inputmode="numeric" value="100,000" aria-label="Your revenue">
+      </div>
+      <div class="pill-row" role="group" aria-label="Period">
+        <button type="button" class="cur-pill per-pill" data-per="year" aria-pressed="true">A year</button>
+        <button type="button" class="cur-pill per-pill" data-per="month" aria-pressed="false">A month</button>
+      </div>
+      <div class="pill-row" role="group" aria-label="Currency">
+        <button type="button" class="cur-pill" data-cur="EUR" aria-pressed="true">EUR</button>
+        <button type="button" class="cur-pill" data-cur="GBP" aria-pressed="false">GBP</button>
+        <button type="button" class="cur-pill" data-cur="USD" aria-pressed="false">USD</button>
+      </div>
+      <p class="hint">Add it to see money instead of percentages. Switching currency relabels, it does not convert.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="aov">Average order value <span class="opt">optional</span></label>
+      <div class="money">
+        <span class="sym cur-sym">€</span>
+        <input id="aov" type="text" inputmode="numeric" value="" placeholder="60" aria-label="Average order value">
+      </div>
+      <p class="hint">What a typical order or sale is worth. Add it and the answer comes back in orders, which is usually the number that lands in a meeting.</p>
+    </div>
+  </div>
+
+  <div class="sides">
+    <article class="side cut" aria-live="polite">
+      <span class="side-tag">If you discount</span>
+      <h2 id="cutTitle">Take 10% off every price</h2>
+      <div class="big" id="cutBig">+25%</div>
+      <p class="big-caption" id="cutCaption">more sales needed just to stand still.</p>
+      <div class="ledger" id="cutLedger"></div>
+      <p class="note" id="cutNote"></p>
+    </article>
+
+    <article class="side rise" aria-live="polite">
+      <span class="side-tag">If you raise your price</span>
+      <h2 id="riseTitle">Add 10% to every price</h2>
+      <div class="big" id="riseBig">17%</div>
+      <p class="big-caption" id="riseCaption">of your sales you could lose and still make the same profit.</p>
+      <div class="ledger" id="riseLedger"></div>
+      <p class="note" id="riseNote"></p>
+    </article>
+  </div>
+
+  <section class="tbl">
+    <h2>What a discount costs you</h2>
+    <p class="lede">Extra sales needed to make the same gross profit after a discount. Your margin row and your chosen discount are highlighted.</p>
+    <div class="table-wrap"><table class="t-cut" id="cutTable"></table></div>
+  </section>
+
+  <section class="tbl">
+    <h2>What a price rise buys you</h2>
+    <p class="lede">Share of your sales you could lose after a price rise and still make the same gross profit. Lose fewer than this and you are ahead.</p>
+    <div class="table-wrap"><table class="t-rise" id="riseTable"></table></div>
+  </section>
+
+  <section class="method">
+    <h2>How it is worked out</h2>
+    <p>With gross margin <i>m</i>, a discount <i>d</i> needs <i>m</i> ÷ (<i>m</i> − <i>d</i>) − 1 extra volume, and a price rise <i>p</i> lets you lose <i>p</i> ÷ (<i>m</i> + <i>p</i>) of volume. Both assume your cost per sale stays the same and nothing else changes. Figures are rounded to the nearest percent.</p>
+    <p>This compares gross profit <strong>before advertising spend</strong>. If you run paid media, a discount also moves the return on ad spend you need to break even. That is a separate calculation, and not one this page makes.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Questions</h2>
+    <details>
+      <summary>How much extra volume does a 10% discount need?</summary>
+      <p>It depends entirely on your gross margin. At a 50% gross margin, a 10% discount needs 25% more sales volume to make the same gross profit. At a 30% margin, the same 10% discount needs 50% more. The lower the margin, the more punishing the discount.</p>
+    </details>
+    <details>
+      <summary>How much volume can I afford to lose after a price rise?</summary>
+      <p>At a 50% gross margin, a 10% price rise means you could lose 17% of your sales volume and still make the same gross profit. Lose less than that and you are better off, with less work for the same money.</p>
+    </details>
+    <details>
+      <summary>What counts as gross margin?</summary>
+      <p>Sales minus the cost of those sales, expressed as a percentage of sales. For an e-commerce brand that usually means revenue minus product cost, and often minus shipping and payment fees. It is on your profit and loss statement.</p>
+    </details>
+    <details>
+      <summary>Does this include advertising cost?</summary>
+      <p>No. It compares gross profit before advertising spend, and assumes your cost per sale stays the same. If you run paid media, a discount also raises the return on ad spend you need to break even, which this calculator does not show.</p>
+    </details>
+  </section>
+
+  <div class="cta-card">
+    <h3>The numbers look worse than you expected?</h3>
+    <p>That is usually the point where the ad account is worth a look. Thirty minutes, no pitch.</p>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="cta-btn" target="_blank" rel="noopener">Book a free audit</a>
+  </div>
+
+  <p class="credit">Adapted from a free tool shared by David Browne (<a href="https://sscbrain.co.uk" target="_blank" rel="noopener">SSC Brain</a>), itself based on the Krystal Clear Accounting discounting and price increase guides. Shared onward in the same spirit.</p>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img src="../notamize-logo.png" alt="Notamize" class="footer-logo-img">
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:info@notamize.com">Email</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Notamize</span>
+      <div class="footer-partners">
+        <span class="footer-partners-label">Member of</span>
+        <a href="https://www.ppcmastery.com/hub" target="_blank" rel="noopener"><img src="../ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo"></a>
+        <a href="https://mikerhodes.com.au/?via=maferchang" target="_blank" rel="noopener"><img src="../adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var marginEl = $('margin'), changeEl = $('change'), salesEl = $('sales'), aovEl = $('aov');
+  var symEls = document.querySelectorAll('.cur-sym');
+  var MARGINS = [90, 80, 70, 60, 50, 40, 30, 20];
+  var CUTS = [1, 2, 5, 10, 15, 20, 25];
+  var RISES = [1, 2, 3, 5, 7, 10, 15];
+  var STORE = 'notamize.discount-or-price-rise.v1';
+
+  var CUR = {
+    EUR: { sym: '\u20AC', loc: 'en-IE' },
+    GBP: { sym: '\u00A3', loc: 'en-GB' },
+    USD: { sym: '$',      loc: 'en-US' }
+  };
+  var cur = 'EUR';
+  var per = 'year';
+  function perWord() { return per === 'year' ? 'a year' : 'a month'; }
+
+  function pct(x) { return Math.round(x * 100) + '%'; }
+  function money(x) {
+    var c = CUR[cur];
+    return c.sym + Math.round(x).toLocaleString(c.loc);
+  }
+  function num(x) { return Math.round(x).toLocaleString(CUR[cur].loc); }
+  function extraNeeded(m, d) { return d >= m ? null : m / (m - d) - 1; }
+  function canLose(m, p) { return p / (m + p); }
+
+  function readNum(el) {
+    var n = parseFloat(String(el.value).replace(/[^0-9.]/g, ''));
+    return isFinite(n) && n > 0 ? n : null;
+  }
+  function ledger(el, rows) {
+    el.innerHTML = rows.map(function (r) {
+      return '<div><span>' + r[0] + '</span><b>' + r[1] + '</b></div>';
+    }).join('');
+  }
+  function withCol(list, v) {
+    return list.indexOf(v) >= 0 ? list : list.concat([v]).sort(function (a, b) { return a - b; });
+  }
+  function withRow(list, v) {
+    return list.indexOf(v) >= 0 ? list : list.concat([v]).sort(function (a, b) { return b - a; });
+  }
+
+  function table(el, rows, cols, mine, chosen, fn, label) {
+    var h = '<thead><tr><th scope="col">Gross margin</th>';
+    cols.forEach(function (c) {
+      h += '<th scope="col"' + (c === chosen ? ' class="col"' : '') + '>' + label + ' ' + c + '%</th>';
+    });
+    h += '</tr></thead><tbody>';
+    rows.forEach(function (r) {
+      var you = r === mine;
+      h += '<tr' + (you ? ' class="you"' : '') + '><th scope="row">' + r + '%' +
+           (you ? '<span class="youpill">You</span>' : '') + '</th>';
+      cols.forEach(function (c) {
+        var v = fn(r / 100, c / 100);
+        var cls = [];
+        if (c === chosen) cls.push('col');
+        if (you && c === chosen) cls.push('hit');
+        if (v === null) {
+          cls.push('na');
+          h += '<td class="' + cls.join(' ') + '">loss on every sale</td>';
+        } else {
+          h += '<td' + (cls.length ? ' class="' + cls.join(' ') + '"' : '') + '>' + pct(v) + '</td>';
+        }
+      });
+      h += '</tr>';
+    });
+    el.innerHTML = h + '</tbody>';
+  }
+
+  function render() {
+    var M = +marginEl.value, C = +changeEl.value, m = M / 100, c = C / 100;
+    $('marginOut').textContent = M;
+    $('changeOut').textContent = C;
+    Array.prototype.forEach.call(symEls, function (e) { e.textContent = CUR[cur].sym; });
+
+    var S = readNum(salesEl);
+    var A = readNum(aovEl);
+    var gp = S ? S * m : null;
+    /* Orders after a discount: revenue needed is S(1-c)(1+x) and the order value
+       itself drops to A(1-c), so the order count simply scales by (1+x). */
+    var orders = (S && A) ? S / A : null;
+
+    /* ── discount side ── */
+    $('cutTitle').textContent = 'Take ' + C + '% off every price';
+    var x = extraNeeded(m, c);
+    var cutNote = $('cutNote');
+    if (x === null) {
+      $('cutBig').textContent = 'No way back';
+      $('cutCaption').textContent = 'A ' + C + '% discount is at or above your ' + M +
+        '% margin, so every sale costs you money. More sales only lose more.';
+      cutNote.textContent = '';
+      cutNote.className = 'note';
+    } else {
+      $('cutBig').textContent = '+' + pct(x);
+      $('cutCaption').textContent = 'more sales needed just to stand still.';
+      cutNote.textContent = 'Every order carries the same cost, so a ' + C +
+        '% discount comes straight off the ' + M + '% you keep. That is why a small ' +
+        'discount needs a big jump in sales.';
+      cutNote.className = x > 0.5 ? 'note warn' : 'note';
+    }
+
+    var cutRows = [['Gross profit falls by', c >= m ? 'all of it' : pct(c / m)]];
+    if (S) {
+      var after = S * (m - c);
+      cutRows.push(['Gross profit ' + perWord(), money(gp)]);
+      cutRows.push(['Same sales, after the discount', after < 0 ? '\u2212' + money(-after) + ' (a loss)' : money(after)]);
+      if (x !== null) cutRows.push(['Revenue needed to get back there', money(S * (1 - c) * (1 + x))]);
+    }
+    if (orders && x !== null) {
+      cutRows.push(['Orders ' + perWord(), num(orders)]);
+      cutRows.push(['Orders needed after the discount', num(orders * (1 + x))]);
+      cutRows.push(['Extra orders to find', '+' + num(orders * x)]);
+    }
+    ledger($('cutLedger'), cutRows);
+
+    /* ── price rise side ── */
+    $('riseTitle').textContent = 'Add ' + C + '% to every price';
+    var y = canLose(m, c);
+    $('riseBig').textContent = pct(y);
+    $('riseCaption').textContent = 'of your sales you could lose and still make the same profit.';
+
+    var riseRows = [['Gross profit rises by', pct(c / m)]];
+    if (S) {
+      riseRows.push(['Gross profit ' + perWord(), money(gp)]);
+      riseRows.push(['Same sales, after the rise', money(S * (1 + c) - S * (1 - m))]);
+      riseRows.push(['Revenue you could drop and break even', money(S * y)]);
+    }
+    if (orders) {
+      riseRows.push(['Orders ' + perWord(), num(orders)]);
+      riseRows.push(['Orders you could lose', '\u2212' + num(orders * y)]);
+    }
+    ledger($('riseLedger'), riseRows);
+    $('riseNote').textContent = 'Lose fewer than ' + pct(y) +
+      ' of your orders and you are better off, with time freed for better service ' +
+      'or for finding the right customers.';
+
+    table($('cutTable'), withRow(MARGINS, M), withCol(CUTS, C), M, C, extraNeeded, 'Discount');
+    table($('riseTable'), withRow(MARGINS, M), withCol(RISES, C), M, C, canLose, 'Rise');
+
+    try {
+      localStorage.setItem(STORE, JSON.stringify({
+        m: M, c: C, s: salesEl.value, a: aovEl.value, cur: cur, per: per
+      }));
+    } catch (e) {}
+  }
+
+  function setCur(next) {
+    if (!CUR[next]) return;
+    cur = next;
+    Array.prototype.forEach.call(document.querySelectorAll('.cur-pill[data-cur]'), function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.cur === cur));
+    });
+    render();
+  }
+
+  function setPer(next) {
+    per = next === 'month' ? 'month' : 'year';
+    Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.per === per));
+    });
+    render();
+  }
+
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE) || 'null');
+    if (saved) {
+      if (saved.m) marginEl.value = saved.m;
+      if (saved.c) changeEl.value = saved.c;
+      if (saved.s) salesEl.value = saved.s;
+      if (saved.a) aovEl.value = saved.a;
+      if (saved.cur && CUR[saved.cur]) cur = saved.cur;
+      if (saved.per) per = saved.per;
+    }
+  } catch (e) {}
+
+  Array.prototype.forEach.call(document.querySelectorAll('.cur-pill[data-cur]'), function (b) {
+    b.addEventListener('click', function () { setCur(b.dataset.cur); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+    b.addEventListener('click', function () { setPer(b.dataset.per); });
+  });
+
+  marginEl.addEventListener('input', render);
+  changeEl.addEventListener('input', render);
+  salesEl.addEventListener('input', render);
+  aovEl.addEventListener('input', render);
+
+  [salesEl, aovEl].forEach(function (el) {
+    el.addEventListener('blur', function () {
+      var n = readNum(el);
+      el.value = n ? Math.round(n).toLocaleString(CUR[cur].loc) : '';
+      render();
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+    b.setAttribute('aria-pressed', String(b.dataset.per === per));
+  });
+  setCur(cur);
+})();
+</script>
+
+</body>
+</html>
