@@ -268,3 +268,19 @@ footer{background:var(--dark);color:#fff;padding:3rem 0 2rem;margin-top:5rem}
   .article{padding:0;max-width:none}
   .faq details{break-inside:avoid}
 }
+
+/* ─── Capturas de pantalla dentro de los pasos ─── */
+figure.shot{
+  margin:1rem 0 1.2rem;background:#fff;border:1px solid var(--sand);
+  border-radius:12px;overflow:hidden;box-shadow:0 4px 20px var(--shadow)
+}
+figure.shot img{display:block;width:100%}
+figure.shot figcaption{
+  padding:.7rem 1rem;background:var(--beige);border-top:1px solid var(--sand);
+  font-size:.85rem;color:var(--muted);line-height:1.5
+}
+
+/* ─── "Seguir leyendo": ahora cada artículo enlaza a varios, uno por línea.
+       La regla .more a de arriba era inline y los pegaba en un solo renglón. ─── */
+.more{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
+.more h3{margin-bottom:.05rem}
