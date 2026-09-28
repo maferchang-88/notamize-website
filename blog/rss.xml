@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Notamize Blog</title>
+    <link>https://www.notamize.com/blog/</link>
+    <description>Practitioner notes on Google Ads and on what AI search is doing to paid media.</description>
+    <language>en</language>
+    <lastBuildDate>Mon, 28 Sep 2026 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.notamize.com/blog/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Performance Max will spend your budget on your competitors</title>
+      <link>https://www.notamize.com/blog/pmax-spends-on-competitor-brands.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/pmax-spends-on-competitor-brands.html</guid>
+      <description>A routine search term audit found a Performance Max campaign returning 19 cents on the euro, most of it spent on rival brand names. How it happens, and the fix.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>llms.txt will not get you cited by AI</title>
+      <link>https://www.notamize.com/blog/llms-txt-no-citation-lift.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/llms-txt-no-citation-lift.html</guid>
+      <description>Two studies covering 300,000 domains and 137,000 sites found no citation lift from llms.txt. What the evidence says, and where to spend that hour instead.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+  </channel>
+</rss>

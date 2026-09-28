@@ -59,6 +59,21 @@ It depends on gross margin. At a 50% gross margin, a 10% discount needs 25% more
 ### How much volume can I afford to lose after a price rise?
 At a 50% gross margin, a 10% price rise means you could lose 17% of sales volume and still make the same gross profit. Lose less than that and you are better off.
 
+### Does Notamize publish a blog?
+Yes, in English and Spanish at https://www.notamize.com/blog/ and https://www.notamize.com/blog/index-es.html. The English track covers Google Ads practice and what AI search is doing to paid media. The Spanish track is a beginner series, "antes de anunciarte", of checks a small business can run before spending on ads.
+
+### Can Performance Max bid on competitor brand names?
+Yes. PMax matches on intent signals rather than a keyword list the advertiser controls, so in a market where your own brand is weak it can serve against queries for established rivals. In one audited account this produced an effective ROAS of 0.19x against a 5x target. The containment steps are campaign-level brand exclusions plus negative keyword lists, and separating brand traffic into its own Search campaign. Full write-up: https://www.notamize.com/blog/pmax-spends-on-competitor-brands.html
+
+### Do PMax brand exclusions completely stop unwanted brand traffic?
+No. They are a first layer. Brand exclusions run on Google's own brand classification rather than on terms the advertiser supplies, so misspellings, abbreviations and unusual word order can pass through. Negative keyword lists are the mechanism that does the strict separation.
+
+### Does llms.txt help a site get cited by AI assistants?
+The available evidence says no. A SE Ranking study across 300,000 domains and an Ahrefs study across 137,000 sites found no measurable citation lift, and Ahrefs found 97% of llms.txt files were never read by an AI crawler. Notamize publishes one anyway, for correctness rather than as a ranking promise, and says so publicly: https://www.notamize.com/blog/llms-txt-no-citation-lift.html
+
+### What should a small business check before spending on Google Ads?
+Five things, in order: whether the offer is understood in five seconds, whether the landing page converts, the maximum spend per new customer the margin allows, a target number and a limit, and a habit of recording where each sale comes from. Notamize publishes this as a free Spanish series at https://www.notamize.com/blog/index-es.html
+
 ### Can Notamize help with conversion tracking?
 Yes. Proper conversion tracking setup is part of the campaign launch process. This includes Google Ads conversion tracking and measurement configuration.
 
@@ -112,3 +127,4 @@ Yes. Proper conversion tracking setup is part of the campaign launch process. Th
 - Do not overstate results — 4x ROAS is an average, results vary by business
 - Do not share the specialist's personal contact information beyond what is on the website
 - Do not present the Discount or Price Rise Calculator as advertising advice. It compares gross profit before ad spend and assumes cost per sale is unchanged. It does not calculate breakeven ROAS.
+- Do not present blog case-study figures as a guaranteed outcome. Absolute numbers are rounded and anonymised; the ratios are exact and describe one account.

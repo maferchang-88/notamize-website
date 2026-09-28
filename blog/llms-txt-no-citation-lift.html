@@ -1,0 +1,529 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO ── -->
+<title>llms.txt will not get you cited by AI | Notamize</title>
+<meta name="description" content="Two studies covering 300,000 domains and 137,000 sites found no citation lift from llms.txt. What the evidence says, and where to spend that hour instead.">
+<link rel="canonical" href="https://www.notamize.com/blog/llms-txt-no-citation-lift.html">
+
+<!-- ── hreflang: FR and ES versions do not exist yet. Restore those two
+     lines (and the nav pills below) at the same time as the files. ── -->
+<link rel="alternate" hreflang="en" href="https://www.notamize.com/blog/llms-txt-no-citation-lift.html">
+<link rel="alternate" hreflang="x-default" href="https://www.notamize.com/blog/llms-txt-no-citation-lift.html">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="llms.txt will not get you cited by AI">
+<meta property="og:description" content="Two studies covering 300,000 domains and 137,000 sites found no citation lift from llms.txt. What the evidence says, and where to spend that hour instead.">
+<meta property="og:url" content="https://www.notamize.com/blog/llms-txt-no-citation-lift.html">
+<!-- TODO: replace with a 1200x630 article card in blog/assets/ once one exists.
+     Pointing at the logo keeps this from resolving to a 404 in the meantime. -->
+<meta property="og:image" content="https://www.notamize.com/notamize-logo.png">
+<meta property="article:published_time" content="2026-09-28">
+<meta property="article:author" content="Maria Fernanda Chang">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ── Axeptio Consent Manager (must load BEFORE GTM) ── -->
+<script>
+window.axeptioSettings = {
+  clientId: "69c449a72612765225d1d6ff",
+  cookiesVersion: "2ee32c34-ad6a-48c0-b23c-20c539e00de7",
+  googleConsentMode: {
+    default: {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    }
+  }
+};
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
+<!-- End Axeptio -->
+
+<!-- ── Google Tag Manager ── -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
+<!-- End Google Tag Manager -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="blog.css">
+
+<!-- ── Schema: Article ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "llms.txt will not get you cited by AI",
+  "description": "Two studies covering 300,000 domains and 137,000 sites found no citation lift from llms.txt. What the evidence says, and where to spend that hour instead.",
+  "image": "https://www.notamize.com/notamize-logo.png",
+  "datePublished": "2026-09-28",
+  "dateModified": "2026-09-28",
+  "author": {
+    "@type": "Person",
+    "name": "Maria Fernanda Chang",
+    "url": "https://www.linkedin.com/in/maria-fernanda-chang-92967751/",
+    "jobTitle": "Digital Advertising Strategist"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Notamize",
+    "url": "https://www.notamize.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.notamize.com/notamize-logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.notamize.com/blog/llms-txt-no-citation-lift.html"
+  },
+  "inLanguage": "en"
+}
+</script>
+
+<!-- ── Schema: FAQPage. Matches the FAQ section below word for word. ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I add an llms.txt file to my site?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, but last and quickly, and without expecting traffic from it. Two 2026 studies found no citation lift and Ahrefs found that 97% of these files are never read by an AI crawler. The real value is that writing it forces you to state your own facts plainly, which usually surfaces contradictions on your site. Spend the first hour on robots.txt and schema instead." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does llms.txt help with Google AI Overviews?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Google's May 2026 generative-AI guidance states that machine-readable files like llms.txt are not needed for AI search. What Google does document and consume is structured data, so schema markup is where that effort belongs." }
+    },
+    {
+      "@type": "Question",
+      "name": "What actually helps AI assistants describe my business correctly?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three things, in order. Confirm AI crawlers are not blocked in robots.txt. Publish and validate Organization and FAQPage schema so the facts are machine-readable and consistent with the visible page. Then run the same questions through ChatGPT, Perplexity and Gemini to see which facts are currently wrong, and fix those specific pages." }
+    },
+    {
+      "@type": "Question",
+      "name": "I sell products online. Where should I start?",
+      "acceptedAnswer": { "@type": "Answer", "text": "With your product feed, not with text files. The feed is the structured catalogue that shopping surfaces and AI shopping agents read. Accurate titles, complete attributes, real GTINs and correct availability affect how your products are described and recommended. An llms.txt file will not compensate for a feed with missing attributes." }
+    }
+  ]
+}
+</script>
+
+<!-- ── Schema: Breadcrumbs ── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.notamize.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.notamize.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "llms.txt will not get you cited by AI", "item": "https://www.notamize.com/blog/llms-txt-no-citation-lift.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZFLCBDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <a href="../index.html"><img src="../notamize-logo.png" alt="Notamize" class="nav-logo-img"></a>
+  <div class="nav-pills">
+    <!-- Restore the FR / ES pills (and their hreflang lines above) once
+         llms-txt-no-citation-lift-fr.html and -es.html actually exist. -->
+    <div class="lang-switcher">
+      <a href="llms-txt-no-citation-lift.html" class="lang-pill active">EN</a>
+    </div>
+    <a href="../index.html#services" class="nav-pill">Services</a>
+    <a href="../index.html#process" class="nav-pill">Process</a>
+    <a href="../index.html#results" class="nav-pill">Results</a>
+    <a href="index.html" class="nav-pill">Blog</a>
+    <a href="../index.html#contact" class="nav-pill">Contact</a>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank">Free Audit</a>
+  </div>
+</nav>
+
+<main class="article">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="../index.html">Home</a> <span>/</span>
+    <a href="index.html">Blog</a> <span>/</span>
+    <span aria-current="page">llms.txt and citations</span>
+  </nav>
+
+  <header class="article-head">
+    <span class="tag">AI search</span>
+    <h1>llms.txt will not get you cited by AI</h1>
+    <p class="standfirst">Two studies, one across 300,000 domains and one across
+      137,000 sites, found no measurable citation lift. I still wrote the file.
+      Here is why, and where the rest of that hour should go.</p>
+    <p class="byline">
+      <img src="../mafer-photo.jpeg" alt="" class="byline-photo">
+      <span>By <strong>Mafer Chang</strong></span>
+      <span class="dot">·</span>
+      <time datetime="2026-09-28">28 September 2026</time>
+      <span class="dot">·</span>
+      <span>8 min read</span>
+    </p>
+  </header>
+
+  <!-- ══ 1. The moment ══ -->
+  <p class="lede">There is an <code>llms.txt</code> file on notamize.com. I
+    wrote it in March 2026.</p>
+
+  <p>It is a straightforward thing to write. You describe your business in plain
+    markdown. What you do, who for, the languages you work in, the link to book
+    a call. No headlines, no persuasion, no hero section. Just facts an AI
+    assistant can read without having to guess at your navigation.</p>
+
+  <p>What I am not going to tell you is that it made AI assistants recommend me.
+    The evidence says it almost certainly did not.</p>
+
+  <!-- ══ 2. The claim under examination ══ -->
+  <h2>The claim, stated at full strength</h2>
+
+  <p>The argument for <code>llms.txt</code> is a good one, and I want to put it
+    fairly before I take it apart.</p>
+
+  <p>Large language models read the web through crawlers that have to fight your
+    site to understand it. Navigation, cookie banners, JavaScript, a hero
+    headline that says "Grow Faster" and means nothing. Every token spent parsing
+    that is a token not spent on what you actually sell. So you publish one
+    markdown file at <code>/llms.txt</code> that hands the model a clean,
+    token-efficient summary of your business, and the model understands you
+    better. Better understanding, the argument goes, means more accurate
+    descriptions and more citations.</p>
+
+  <p>It is a tidy idea. It costs almost nothing. It has a specification, a
+    growing list of adopters, and it sits at the top of most AEO packages being
+    sold right now, usually as the first deliverable and often as the headline
+    one.</p>
+
+  <p>I wrote one.</p>
+
+  <!-- ══ 3. What the evidence says ══ -->
+  <h2>What the studies actually found</h2>
+
+  <p>Two independent studies ran at meaningful scale in 2026, and both point the
+    same way.</p>
+
+  <p>SE Ranking looked across 300,000 domains and found no citation lift. Sites
+    with an <code>llms.txt</code> file were not cited more often by AI
+    assistants than sites without one.</p>
+
+  <p>Ahrefs looked at 137,000 sites and found the mechanism behind that result.
+    In 97% of cases, the <code>llms.txt</code> file was never read by an AI
+    crawler at all. Not misread. Not deprioritised. Never requested.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Source</th><th>Scope</th><th>Finding</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>SE Ranking</td>
+          <td>300,000 domains</td>
+          <td>No citation lift for sites with llms.txt</td>
+        </tr>
+        <tr>
+          <td>Ahrefs</td>
+          <td>137,000 sites</td>
+          <td>97% of llms.txt files never read by an AI crawler</td>
+        </tr>
+        <tr>
+          <td>Google generative-AI guide, May 2026</td>
+          <td>Documentation</td>
+          <td>Machine-readable files like llms.txt are not needed for AI search</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <blockquote>A file that is never requested cannot influence anything. That is
+    the entire argument, and it fits in one sentence.</blockquote>
+
+  <p>Then in May 2026 Google published its own generative-AI guidance and said
+    directly that machine-readable files like <code>llms.txt</code> are not
+    needed for AI search. Not "less important than you think". Not needed.</p>
+
+  <p>Three things worth being precise about here, because this is the part that
+    gets overstated in both directions.</p>
+
+  <p>First, none of this says <code>llms.txt</code> is harmful. It is a static
+    text file. It does not slow your site down, it does not compete with
+    anything, and no study found a penalty.</p>
+
+  <p>Second, no citation lift measured across 300,000 domains is not the same as
+    proof that no effect exists anywhere. It means that if there is an effect, it
+    is too small to find in a sample that size. That is a meaningful result, and
+    it is also not a law of physics.</p>
+
+  <p>Third, and this is the part that matters most if you are deciding where to
+    spend an hour: the same body of research is clear about what does help.
+    Structured data does. Schema markup is read, documented and acted on. Google
+    tells you what it consumes and gives you a validator to check your work. The
+    contrast is not subtle. One artifact has a specification nobody enforces and
+    a 97% non-read rate. The other has documentation, a testing tool, and visible
+    consequences when you get it wrong.</p>
+
+  <p>And if you sell products, neither of those is your main lever. Your product
+    feed is. That is the structured description of your catalogue that shopping
+    surfaces and AI shopping agents actually parse, and it is the one place where
+    wrong data has an immediate, measurable cost.</p>
+
+  <!-- ══ 4. What it means for your account ══ -->
+  <h2>The part that lands on your ad budget</h2>
+
+  <p>This is where I think the AEO conversation goes quiet, and it is the part I
+    care about most, because
+    <a href="../index.html#services">the Google Ads work I do</a> lives inside
+    accounts rather than on content sites.</p>
+
+  <p>Avinash Kaushik has been modelling the downstream numbers through his AEO
+    series, and his figures are worth sitting with. He puts the coming traffic
+    reduction at around 30% for organic and 15% for paid. He also reports that
+    ChatGPT referral traffic converts at 16%, against 1.8% for Google organic.</p>
+
+  <p>Read those two together, because separately they mislead.</p>
+
+  <p>A 9x conversion rate on a channel that is still a rounding error in your
+    sessions does not save your quarter. What it tells you is that people
+    arriving from an answer engine have already done their comparison. The
+    research step happened somewhere you cannot see and cannot bid on. They
+    arrive at the end of the funnel, not the start.</p>
+
+  <p>Now think about what that does to a Google Ads account.</p>
+
+  <p><strong>Your brand terms get more expensive to defend.</strong> If a third
+    of the organic traffic that used to arrive for free stops arriving, that
+    demand does not vanish, it reappears as paid clicks on your own brand.
+    Kaushik puts the brand traffic mitigation cost at a 15 to 20% budget
+    increase. That is not a strategy change, it is the same revenue costing
+    more.</p>
+
+  <p><strong>Your search terms get longer.</strong> Answer engines are trained on
+    questions, not keywords, and the query behaviour bleeds back into search.
+    Where that happens, phrase and exact match coverage built for two-word
+    keywords quietly stops matching, and the traffic lands in whatever campaign
+    is loosest. Your own search term report will tell you whether it is
+    happening in your account, which is a better source than anyone's
+    impression of the trend.</p>
+
+  <p><strong>Answer surfaces have fewer ad slots than ten blue links.</strong>
+    Fewer slots at the same demand is a price increase, and it arrives without an
+    announcement.</p>
+
+  <p>None of that gets fixed by a markdown file. All of it shows up in your
+    account this quarter.</p>
+
+  <!-- ══ 5. What to actually do ══ -->
+  <h2>Where that hour actually goes</h2>
+
+  <p>In order, and none of them need a budget. The first one matters most,
+    because it is the only item here that can leave a site genuinely invisible to
+    AI assistants rather than merely unhelped. If you want to see how I sequence
+    work like this, it is set out in
+    <a href="../index.html#process">the process I follow on an account</a>.</p>
+
+  <ol class="steps">
+    <li><strong>Check <code>robots.txt</code> before anything else.</strong> This
+      is the one place where a site can be actively invisible to AI assistants,
+      and it happens by accident more often than you would expect. Confirm that
+      <code>GPTBot</code>, <code>OAI-SearchBot</code>, <code>ChatGPT-User</code>,
+      <code>ClaudeBot</code>, <code>PerplexityBot</code> and
+      <code>Google-Extended</code> are not blocked. One note on that last one:
+      <code>Google-Extended</code> controls Gemini grounding and training use,
+      not normal Search indexing, so blocking it does not hurt your rankings. And
+      if you blocked these crawlers deliberately because you do not want your
+      content used for training, keep the block. That is a trade-off you chose,
+      not a bug. Skip this step only if you know when you last read the file.</li>
+
+    <li><strong>Add <code>Organization</code> and <code>FAQPage</code> schema,
+      then validate it.</strong> This is the part with evidence behind it.
+      <code>Organization</code> for who you are, <code>FAQPage</code> mirroring
+      questions clients genuinely ask you. Then run every block through Google's
+      Rich Results Test, because schema that contradicts the visible page can be
+      treated as spam, which is worse than having none. If you use a tag manager
+      you can deploy this today without touching your theme.</li>
+
+    <li><strong>Run the discovery test yourself.</strong> Open ChatGPT,
+      Perplexity and Gemini and ask four things: what does my business do, is it
+      a good fit for my ideal client, how does it compare to a named competitor,
+      and how do I get in touch. Screenshot all twelve answers. This takes
+      fifteen minutes and it is the most useful fifteen minutes in the list,
+      because it stops being theoretical. You find out which facts are wrong,
+      which service you are not associated with at all, and whether you appear in
+      comparisons. Those are fixable problems with known fixes.</li>
+
+    <li><strong>If you sell products, fix the feed and stop reading about text
+      files.</strong> Titles that describe the product rather than pack it with
+      keywords. Complete attributes, real GTINs, accurate availability, correct
+      prices. Your feed is the version of your catalogue that machines read. A
+      perfect <code>llms.txt</code> next to a feed with 40% of attributes missing
+      is a strange way to spend an afternoon.</li>
+
+    <li><strong>Then write the <code>llms.txt</code> anyway.</strong> Twenty
+      minutes, last, expecting nothing from it. Two reasons. It costs nothing and
+      the cost of being wrong about it is one file. And writing it forces you to
+      state plainly what you do, who for, and what you sell, in language with no
+      marketing in it. That is a useful exercise whether or not anything ever
+      reads the file.</li>
+  </ol>
+
+  <!-- ══ 6. What we do not know ══ -->
+  <h2 class="h2-caveat">What I do not know</h2>
+  <div class="caveat">
+    <p>Both studies measure a moment, and it is an early moment. Adoption is
+      young, crawler behaviour is not fixed, and if OpenAI or Google start
+      requesting <code>/llms.txt</code> next quarter then this article is wrong
+      and I will say so here.</p>
+
+    <p>Neither study can prove a negative. No lift found across 300,000 domains
+      is a strong signal, not a closed case.</p>
+
+    <p>Kaushik's conversion figures come from his corpus, not mine. Treat them as
+      direction and order of magnitude, not as a benchmark to plan against.</p>
+
+    <p>And I should be straight about my own position. I have no AEO monitoring
+      running and no traffic baseline on my own site beyond a tag container, so I
+      cannot tell you what my <code>llms.txt</code> did or did not do. Neither
+      can most people who will tell you theirs worked. What they have is a
+      correlation and a busy quarter.</p>
+  </div>
+
+  <!-- ══ 7. The question ══ -->
+  <h2>One question</h2>
+
+  <p>If you have an <code>llms.txt</code> live, go and grep your server logs for
+    it. I want to know whether anything ever requested it, and under which user
+    agent.</p>
+
+  <p class="question">That single line in your logs would tell us more than
+    either study did. Has anyone actually looked?</p>
+
+  <!-- ══ FAQ. Matches the FAQPage schema word for word. ══ -->
+  <section class="faq">
+    <h2>Questions people actually ask</h2>
+    <details open>
+      <summary>Should I add an llms.txt file to my site?</summary>
+      <p>Yes, but last and quickly, and without expecting traffic from it. Two
+        2026 studies found no citation lift and Ahrefs found that 97% of these
+        files are never read by an AI crawler. The real value is that writing it
+        forces you to state your own facts plainly, which usually surfaces
+        contradictions on your site. Spend the first hour on robots.txt and
+        schema instead.</p>
+    </details>
+    <details>
+      <summary>Does llms.txt help with Google AI Overviews?</summary>
+      <p>No. Google's May 2026 generative-AI guidance states that
+        machine-readable files like llms.txt are not needed for AI search. What
+        Google does document and consume is structured data, so schema markup is
+        where that effort belongs.</p>
+    </details>
+    <details>
+      <summary>What actually helps AI assistants describe my business correctly?</summary>
+      <p>Three things, in order. Confirm AI crawlers are not blocked in
+        robots.txt. Publish and validate Organization and FAQPage schema so the
+        facts are machine-readable and consistent with the visible page. Then run
+        the same questions through ChatGPT, Perplexity and Gemini to see which
+        facts are currently wrong, and fix those specific pages.</p>
+    </details>
+    <details>
+      <summary>I sell products online. Where should I start?</summary>
+      <p>With your product feed, not with text files. The feed is the structured
+        catalogue that shopping surfaces and AI shopping agents read. Accurate
+        titles, complete attributes, real GTINs and correct availability affect
+        how your products are described and recommended. An llms.txt file will
+        not compensate for a feed with missing attributes.</p>
+    </details>
+  </section>
+
+  <!-- ══ Sources ══ -->
+  <section class="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li>SE Ranking, 2026 study across 300,000 domains: no citation lift from
+        llms.txt.</li>
+      <li>Ahrefs, 2026 study across 137,000 sites: 97% of llms.txt files never
+        read by an AI crawler.</li>
+      <li>Google, generative-AI and AI search guidance, May 2026:
+        machine-readable files such as llms.txt are not needed for AI search.</li>
+      <li>Avinash Kaushik, "AI Age: Bye SEO, Hello AEO" series, TMAI, 2025:
+        organic and paid traffic reduction estimates, brand traffic mitigation
+        cost, and the ChatGPT versus Google organic conversion rate
+        comparison.</li>
+    </ul>
+  </section>
+
+  <aside class="cta-card">
+    <h3>Want this checked on your own account?</h3>
+    <p>I run a free 30 minute audit. No deck, no pitch. You get the findings
+      whether or not we work together.</p>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="cta-btn" target="_blank">Book the free audit</a>
+  </aside>
+
+  <!-- The "Keep reading" block goes back in once a second article exists.
+       A link to a 404 is worse than no link. -->
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img src="../notamize-logo.png" alt="Notamize" class="footer-logo-img">
+      <div class="footer-links">
+        <a href="index.html">Blog</a>
+        <a href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank">LinkedIn</a>
+        <a href="mailto:info@notamize.com">Email</a>
+        <a href="https://www.facebook.com/profile.php?id=61579275497526" target="_blank">Facebook</a>
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Notamize</span>
+      <div class="footer-partners">
+        <span class="footer-partners-label">Member of</span>
+        <a href="https://www.ppcmastery.com/hub" target="_blank"><img src="../ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo"></a>
+        <a href="https://ads2ai.com/maferchang?ref=MAFERCHANG" target="_blank"><img src="../adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- TidyCal booking-CTA click tracking. Copied from the home pages so blog CTAs
+     report identically. Reuses the `cta_click` event GTM-TZFLCBDG already
+     consumes; no GTM change required. -->
+<script>
+(function(){
+  var links = document.querySelectorAll('a[href*="tidycal.com"]');
+  Array.prototype.forEach.call(links, function(a){
+    a.addEventListener('click', function(){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'cta_click',
+        cta_label: (a.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 100),
+        cta_href: a.getAttribute('href'),
+        cta_type: 'tidycal_booking'
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>

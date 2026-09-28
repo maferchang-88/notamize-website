@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Blog de Notamize</title>
+    <link>https://www.notamize.com/blog/index-es.html</link>
+    <description>Lo que de verdad esta pasando con la busqueda y con Google Ads, contado desde la practica.</description>
+    <language>es</language>
+    <lastBuildDate>Mon, 28 Sep 2026 09:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.notamize.com/blog/rss-es.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>¿Tu oferta se entiende en 5 segundos, o hay que adivinar?</title>
+      <link>https://www.notamize.com/blog/oferta-clara-en-5-segundos-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/oferta-clara-en-5-segundos-es.html</guid>
+      <description>Antes de gastar un euro en Google Ads, revisa si tu oferta se entiende sola. Las cuatro preguntas que responde una buena oferta y una prueba de 5 segundos.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>Tu anuncio es bueno, ¿pero qué pasa cuando hacen clic?</title>
+      <link>https://www.notamize.com/blog/tu-pagina-despues-del-clic-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/tu-pagina-despues-del-clic-es.html</guid>
+      <description>Antes de gastar un euro en Google Ads, revisa si tu página deja ir a la gente que ya pagaste por traer. Cinco comprobaciones que puedes hacer desde el móvil.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>¿Cuánto puedes gastar por cada cliente nuevo, sin perder dinero?</title>
+      <link>https://www.notamize.com/blog/cuanto-gastar-por-cliente-nuevo-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/cuanto-gastar-por-cliente-nuevo-es.html</guid>
+      <description>Antes de gastar un euro en Google Ads, calcula el límite real que puedes invertir por cada cliente nuevo. Una cuenta de dos minutos con tu producto más vendido.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>¿Cuál es tu número, sin importar por dónde vendas hoy?</title>
+      <link>https://www.notamize.com/blog/cual-es-tu-numero-clave-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/cual-es-tu-numero-clave-es.html</guid>
+      <description>El número principal y el límite que no debes cruzar, calculados con tus ventas de hoy, tengas o no anuncios corriendo. Parte 4 de la serie antes de anunciarte.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>Antes de encender tu primer anuncio, ¿sabes de dónde viene cada venta que haces hoy?</title>
+      <link>https://www.notamize.com/blog/de-donde-viene-cada-venta-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/de-donde-viene-cada-venta-es.html</guid>
+      <description>No necesitas tener Google Ads para saber si mides bien. Registra de dónde viene cada venta hoy, vendas por WhatsApp, por redes o en tu local. Parte 5 de 5.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>3 señales de que tus anuncios están tirando el dinero</title>
+      <link>https://www.notamize.com/blog/tres-senales-anuncios-tiran-dinero-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/tres-senales-anuncios-tiran-dinero-es.html</guid>
+      <description>Tres comprobaciones que puedes hacer por tu cuenta en diez minutos para saber si tu inversión en publicidad está rindiendo o solo saliendo de tu cuenta.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+    <item>
+      <title>Cómo crear tu Perfil de Empresa en Google, paso a paso</title>
+      <link>https://www.notamize.com/blog/perfil-de-empresa-en-google-es.html</link>
+      <guid isPermaLink="true">https://www.notamize.com/blog/perfil-de-empresa-en-google-es.html</guid>
+      <description>Guía paso a paso para crear tu Perfil de Empresa en Google, antes Google My Business, y aparecer gratis en Google y en Maps cuando alguien busca lo que ofreces.</description>
+      <pubDate>Mon, 28 Sep 2026 09:00:00 +0000</pubDate>
+      <dc:creator>Mafer Chang</dc:creator>
+    </item>
+  </channel>
+</rss>

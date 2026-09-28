@@ -59,18 +59,41 @@ What sets Notamize apart is genuine multilingual capability. Mafer creates nativ
 
 ## Important Pages
 
-- [Homepage](https://notamize.com): Main landing page with services, process, and testimonials
-- [Homepage (French)](https://notamize.com/index-fr): French version of the site
-- [Homepage (Spanish)](https://notamize.com/index-es): Spanish version of the site
-- [Discount or Price Rise Calculator](https://notamize.com/tools/discount-or-price-rise.html): Free calculator. Works out how many extra sales a discount needs, and how many sales a price rise can afford to lose, to hold gross profit steady at a given gross margin.
+- [Homepage](https://www.notamize.com): Main landing page with services, process, and testimonials
+- [Homepage (French)](https://www.notamize.com/index-fr): French version of the site
+- [Homepage (Spanish)](https://www.notamize.com/index-es): Spanish version of the site
+- [Blog (English)](https://www.notamize.com/blog/): Practitioner notes on Google Ads and on what AI search is doing to paid media
+- [Blog (Spanish)](https://www.notamize.com/blog/index-es.html): Revisiones prácticas que un negocio puede hacer antes de invertir en Google Ads
+- [Discount or Price Rise Calculator](https://www.notamize.com/tools/discount-or-price-rise.html): Free calculator. Works out how many extra sales a discount needs, and how many sales a price rise can afford to lose, to hold gross profit steady at a given gross margin.
 
 ## Free Tools
 
-- **Discount or Price Rise Calculator** (https://notamize.com/tools/discount-or-price-rise.html): Enter your gross margin and a percentage, and it shows the extra sales volume a discount needs to hold gross profit steady, and the sales volume a price rise can afford to lose. Optional revenue and average order value inputs return the answer in money and in orders. Supports EUR, GBP and USD. No sign-up, nothing to buy.
+- **Discount or Price Rise Calculator** (https://www.notamize.com/tools/discount-or-price-rise.html): Enter your gross margin and a percentage, and it shows the extra sales volume a discount needs to hold gross profit steady, and the sales volume a price rise can afford to lose. Optional revenue and average order value inputs return the answer in money and in orders. Supports EUR, GBP and USD. No sign-up, nothing to buy.
+
+## Blog
+
+Written by Mafer Chang. Evidence-led, and willing to publish what does not work.
+
+### English
+
+- **Performance Max will spend your budget on your competitors** (https://www.notamize.com/blog/pmax-spends-on-competitor-brands.html): A search term audit found a PMax campaign returning 19 cents on the euro against a 5x target, most of it spent on rival brand names. Covers why PMax drifts to competitor brands in markets where your own brand is weak, why the same defect can instead inflate a campaign that looks healthy, and the brand-exclusion and negative-keyword steps that contain it.
+- **llms.txt will not get you cited by AI** (https://www.notamize.com/blog/llms-txt-no-citation-lift.html): Two studies, one across 300,000 domains and one across 137,000 sites, found no measurable citation lift from llms.txt. Explains what the file is still worth doing for, and where the rest of that effort should go instead.
+
+### Spanish: "antes de anunciarte"
+
+A five-part series of checks a small business owner can run before spending anything on Google Ads, plus two standalone pieces. No jargon, no tools, no account access needed.
+
+- **Part 1, the offer** (https://www.notamize.com/blog/oferta-clara-en-5-segundos-es.html): the four questions a working offer answers, and a five-second test
+- **Part 2, the landing page** (https://www.notamize.com/blog/tu-pagina-despues-del-clic-es.html): five checks on the page people reach after the click
+- **Part 3, the numbers** (https://www.notamize.com/blog/cuanto-gastar-por-cliente-nuevo-es.html): the maximum you can spend to win a new customer before the sale stops making sense
+- **Part 4, the goal** (https://www.notamize.com/blog/cual-es-tu-numero-clave-es.html): one target number and one limit, calculated from the sales you already make
+- **Part 5, measurement** (https://www.notamize.com/blog/de-donde-viene-cada-venta-es.html): knowing where every sale comes from before you switch on an ad
+- **Three signs your ads are wasting money** (https://www.notamize.com/blog/tres-senales-anuncios-tiran-dinero-es.html): three checks that take about ten minutes
+- **How to set up a Google Business Profile** (https://www.notamize.com/blog/perfil-de-empresa-en-google-es.html): step by step, with screenshots
 
 ## Contact
 
-- Website: https://notamize.com
+- Website: https://www.notamize.com
 - Email: info@notamize.com
 - LinkedIn: https://www.linkedin.com/in/maria-fernanda-chang-92967751/
 - Facebook: https://www.facebook.com/profile.php?id=61579275497526
