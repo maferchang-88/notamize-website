@@ -1,0 +1,493 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO ── -->
+<title>Calculadora de descuentos y subidas de precio | Notamize</title>
+<meta name="description" content="Calcula cuántas ventas más necesita un descuento y cuántas te puedes permitir perder si subes el precio, según tu margen bruto. Gratis y sin registro.">
+<link rel="canonical" href="https://www.notamize.com/tools/descuento-o-subida-de-precio-es.html">
+<link rel="alternate" hreflang="es" href="https://www.notamize.com/tools/descuento-o-subida-de-precio-es.html">
+<link rel="alternate" hreflang="en" href="https://www.notamize.com/tools/discount-or-price-rise.html">
+<link rel="alternate" hreflang="x-default" href="https://www.notamize.com/tools/discount-or-price-rise.html">
+<link rel="alternate" type="application/rss+xml" title="Blog de Notamize" href="https://www.notamize.com/blog/rss-es.xml">
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="Calculadora: ¿descuento o subida de precio?">
+<meta property="og:description" content="¿Cuántas ventas más necesita un descuento? ¿Cuántas te puedes permitir perder si subes el precio? Pon tu margen bruto y míralo.">
+<meta property="og:url" content="https://www.notamize.com/tools/descuento-o-subida-de-precio-es.html">
+<!-- TODO: sustituir por una imagen 1200x630 en tools/assets/ cuando exista. -->
+<meta property="og:image" content="https://www.notamize.com/notamize-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ── Axeptio Consent Manager (debe cargar ANTES que GTM) ── -->
+<script>
+window.axeptioSettings = {
+  clientId: "69c449a72612765225d1d6ff",
+  cookiesVersion: "2ee32c34-ad6a-48c0-b23c-20c539e00de7",
+  googleConsentMode: {
+    default: {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    }
+  }
+};
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
+<!-- End Axeptio -->
+
+<!-- ── Google Tag Manager ── -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
+<!-- End Google Tag Manager -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tool.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Calculadora de descuentos y subidas de precio",
+  "url": "https://www.notamize.com/tools/descuento-o-subida-de-precio-es.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "es",
+  "description": "Calcula el volumen de ventas adicional que necesita un descuento, y el volumen que te puedes permitir perder tras una subida de precio, para mantener el mismo beneficio bruto con un margen dado.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+  "author": {
+    "@type": "Person",
+    "name": "Maria Fernanda Chang",
+    "url": "https://www.linkedin.com/in/maria-fernanda-chang-92967751/",
+    "jobTitle": "Estratega de marketing digital"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Notamize",
+    "url": "https://www.notamize.com",
+    "logo": { "@type": "ImageObject", "url": "https://www.notamize.com/notamize-logo.png" }
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": "es",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cuánto volumen extra necesita un descuento del 10%?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende por completo de tu margen bruto. Con un margen del 50%, un descuento del 10% necesita un 25% más de ventas para obtener el mismo beneficio bruto. Con un margen del 30%, ese mismo descuento necesita un 50% más. Cuanto más bajo es el margen, más castiga el descuento." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas ventas me puedo permitir perder si subo el precio?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Con un margen bruto del 50%, una subida del 10% significa que podrías perder un 17% de tus ventas y seguir obteniendo el mismo beneficio bruto. Si pierdes menos que eso, sales ganando, con menos trabajo para el mismo dinero." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué cuenta como margen bruto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Las ventas menos el coste de esas ventas, expresado como porcentaje de las ventas. En una tienda online eso suele ser la facturación menos el coste del producto, y a menudo menos el envío y las comisiones de pago. Está en tu cuenta de resultados." }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Incluye el coste de la publicidad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Compara el beneficio bruto antes del gasto en publicidad y da por supuesto que tu coste por venta no cambia. Si haces publicidad de pago, un descuento también sube el retorno que necesitas para llegar al punto de equilibrio, y eso esta calculadora no lo muestra." }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZFLCBDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <a href="../index-es.html"><img src="../notamize-logo.png" alt="Notamize" class="nav-logo-img"></a>
+  <div class="nav-pills">
+    <!-- Añade la píldora FR cuando exista esa versión de la herramienta. -->
+    <div class="lang-switcher">
+      <a href="discount-or-price-rise.html" class="lang-pill">EN</a>
+      <a href="descuento-o-subida-de-precio-es.html" class="lang-pill active">ES</a>
+    </div>
+    <a href="../index-es.html#servicios" class="nav-pill">Servicios</a>
+    <a href="../index-es.html#proceso" class="nav-pill">Proceso</a>
+    <a href="../index-es.html#results" class="nav-pill">Resultados</a>
+    <a href="../blog/index-es.html" class="nav-pill">Blog</a>
+    <a href="../index-es.html#contact" class="nav-pill">Contacto</a>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank" rel="noopener">Auditoría Gratis</a>
+  </div>
+</nav>
+
+<main class="tool">
+
+  <nav class="crumbs" aria-label="Migas de pan">
+    <a href="../index-es.html">Inicio</a> <span aria-hidden="true">›</span>
+    <span aria-current="page">Descuento o subida de precio</span>
+  </nav>
+
+  <header class="tool-head">
+    <span class="tag">Herramienta gratuita</span>
+    <h1>¿Hacer <span class="cut">descuento</span>, o subir el <span class="rise">precio</span>?</h1>
+    <p class="standfirst">Pon tu margen y el porcentaje que estás considerando. Esto calcula cuántas ventas más tiene que encontrar un descuento, y cuántas te puedes permitir perder con una subida, para el mismo beneficio bruto. Sirve para una tienda online o para cualquier negocio con un coste por venta.</p>
+  </header>
+
+  <div class="controls" role="group" aria-label="Tus cifras">
+    <div class="ctl">
+      <label for="margin">Tu margen bruto</label>
+      <div class="ctl-row"><output id="marginOut" for="margin">50</output><span class="unit">%</span></div>
+      <input type="range" id="margin" min="5" max="90" step="1" value="50">
+      <p class="hint">Lo que te queda de una venta después de lo que te ha costado esa venta. Una tienda cuenta el coste del producto. Un negocio de servicios cuenta el coste de hacer el trabajo. Está en tu cuenta de resultados.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="change">Descuento o subida de precio</label>
+      <div class="ctl-row"><output id="changeOut" for="change">10</output><span class="unit">%</span></div>
+      <input type="range" id="change" min="1" max="30" step="1" value="10">
+      <p class="hint">El mismo porcentaje se prueba en los dos sentidos aquí abajo.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="sales">Tu facturación <span class="opt">opcional</span></label>
+      <div class="money">
+        <input id="sales" type="text" inputmode="numeric" value="100.000" aria-label="Tu facturación">
+        <span class="sym cur-sym">€</span>
+      </div>
+      <div class="pill-row" role="group" aria-label="Periodo">
+        <button type="button" class="cur-pill per-pill" data-per="year" aria-pressed="true">Al año</button>
+        <button type="button" class="cur-pill per-pill" data-per="month" aria-pressed="false">Al mes</button>
+      </div>
+      <div class="pill-row" role="group" aria-label="Moneda">
+        <button type="button" class="cur-pill" data-cur="EUR" aria-pressed="true">EUR</button>
+        <button type="button" class="cur-pill" data-cur="GBP" aria-pressed="false">GBP</button>
+        <button type="button" class="cur-pill" data-cur="USD" aria-pressed="false">USD</button>
+      </div>
+      <p class="hint">Añádela para ver dinero en vez de porcentajes. Cambiar de moneda cambia la etiqueta, no convierte.</p>
+    </div>
+
+    <div class="ctl">
+      <label for="aov">Valor medio del pedido <span class="opt">opcional</span></label>
+      <div class="money">
+        <input id="aov" type="text" inputmode="numeric" value="" placeholder="60" aria-label="Valor medio del pedido">
+        <span class="sym cur-sym">€</span>
+      </div>
+      <p class="hint">Lo que vale un pedido o una venta típica. Añádelo y la respuesta sale en pedidos, que suele ser el número que funciona en una reunión.</p>
+    </div>
+  </div>
+
+  <div class="sides">
+    <article class="side cut" aria-live="polite">
+      <span class="side-tag">Si haces descuento</span>
+      <h2 id="cutTitle">Quitar un 10% a cada precio</h2>
+      <div class="big" id="cutBig">+25%</div>
+      <p class="big-caption" id="cutCaption">más ventas solo para quedarte igual.</p>
+      <div class="ledger" id="cutLedger"></div>
+      <p class="note" id="cutNote"></p>
+    </article>
+
+    <article class="side rise" aria-live="polite">
+      <span class="side-tag">Si subes el precio</span>
+      <h2 id="riseTitle">Añadir un 10% a cada precio</h2>
+      <div class="big" id="riseBig">17%</div>
+      <p class="big-caption" id="riseCaption">de tus ventas podrías perder y seguir ganando lo mismo.</p>
+      <div class="ledger" id="riseLedger"></div>
+      <p class="note" id="riseNote"></p>
+    </article>
+  </div>
+
+  <section class="tbl">
+    <h2>Lo que te cuesta un descuento</h2>
+    <p class="lede">Ventas adicionales necesarias para obtener el mismo beneficio bruto después de un descuento. Tu fila de margen y el descuento que has elegido aparecen resaltados.</p>
+    <div class="table-wrap"><table class="t-cut" id="cutTable"></table></div>
+  </section>
+
+  <section class="tbl">
+    <h2>Lo que te da una subida de precio</h2>
+    <p class="lede">Parte de tus ventas que podrías perder tras una subida y seguir obteniendo el mismo beneficio bruto. Pierde menos que eso y sales ganando.</p>
+    <div class="table-wrap"><table class="t-rise" id="riseTable"></table></div>
+  </section>
+
+  <section class="method">
+    <h2>Cómo se calcula</h2>
+    <p>Con un margen bruto <i>m</i>, un descuento <i>d</i> necesita <i>m</i> ÷ (<i>m</i> − <i>d</i>) − 1 de volumen adicional, y una subida <i>p</i> te permite perder <i>p</i> ÷ (<i>m</i> + <i>p</i>) del volumen. Los dos dan por supuesto que tu coste por venta no cambia y que nada más se mueve. Las cifras se redondean al punto porcentual más cercano.</p>
+    <p>Esto compara el beneficio bruto <strong>antes del gasto en publicidad</strong>. Si haces publicidad de pago, un descuento también mueve el retorno que necesitas para llegar al punto de equilibrio. Ese es otro cálculo, y no lo hace esta página.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Preguntas</h2>
+    <details>
+      <summary>¿Cuánto volumen extra necesita un descuento del 10%?</summary>
+      <p>Depende por completo de tu margen bruto. Con un margen del 50%, un descuento del 10% necesita un 25% más de ventas para obtener el mismo beneficio bruto. Con un margen del 30%, ese mismo descuento necesita un 50% más. Cuanto más bajo es el margen, más castiga el descuento.</p>
+    </details>
+    <details>
+      <summary>¿Cuántas ventas me puedo permitir perder si subo el precio?</summary>
+      <p>Con un margen bruto del 50%, una subida del 10% significa que podrías perder un 17% de tus ventas y seguir obteniendo el mismo beneficio bruto. Si pierdes menos que eso, sales ganando, con menos trabajo para el mismo dinero.</p>
+    </details>
+    <details>
+      <summary>¿Qué cuenta como margen bruto?</summary>
+      <p>Las ventas menos el coste de esas ventas, expresado como porcentaje de las ventas. En una tienda online eso suele ser la facturación menos el coste del producto, y a menudo menos el envío y las comisiones de pago. Está en tu cuenta de resultados.</p>
+    </details>
+    <details>
+      <summary>¿Incluye el coste de la publicidad?</summary>
+      <p>No. Compara el beneficio bruto antes del gasto en publicidad y da por supuesto que tu coste por venta no cambia. Si haces publicidad de pago, un descuento también sube el retorno que necesitas para llegar al punto de equilibrio, y eso esta calculadora no lo muestra.</p>
+    </details>
+  </section>
+
+  <div class="cta-card">
+    <h3>¿Los números pintan peor de lo que esperabas?</h3>
+    <p>Ese suele ser el momento en que merece la pena mirar la cuenta de anuncios. Treinta minutos, sin presentación y sin venta.</p>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="cta-btn" target="_blank" rel="noopener">Reservar una auditoría gratuita</a>
+  </div>
+
+  <p class="credit">Adaptado de una herramienta gratuita compartida por David Browne (<a href="https://sscbrain.co.uk" target="_blank" rel="noopener">SSC Brain</a>), basada a su vez en las guías de descuentos y subidas de precio de Krystal Clear Accounting. Se comparte con el mismo espíritu.</p>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img src="../notamize-logo.png" alt="Notamize" class="footer-logo-img">
+      <div class="footer-links">
+        <a href="../index-es.html">Inicio</a>
+        <a href="../blog/index-es.html">Blog</a>
+        <a href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:info@notamize.com">Email</a>
+        <a href="../privacy-policy-es.html">Política de privacidad</a>
+        <a href="../mentions-legales.html">Mentions légales</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Notamize</span>
+      <div class="footer-partners">
+        <span class="footer-partners-label">Miembro de</span>
+        <a href="https://www.ppcmastery.com/hub" target="_blank" rel="noopener"><img src="../ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo"></a>
+        <a href="https://ads2ai.com/maferchang?ref=MAFERCHANG" target="_blank" rel="noopener"><img src="../adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var marginEl = $('margin'), changeEl = $('change'), salesEl = $('sales'), aovEl = $('aov');
+  var symEls = document.querySelectorAll('.cur-sym');
+  var MARGINS = [90, 80, 70, 60, 50, 40, 30, 20];
+  var CUTS = [1, 2, 5, 10, 15, 20, 25];
+  var RISES = [1, 2, 3, 5, 7, 10, 15];
+  /* Same storage key as the English page on purpose: same origin, same person,
+     so switching language keeps the figures they already typed. */
+  var STORE = 'notamize.discount-or-price-rise.v1';
+
+  /* Spanish number formatting throughout: thousands separated with a dot, and
+     the currency symbol after the number, which is the local convention. */
+  var CUR = {
+    EUR: { sym: '€', loc: 'es-ES' },
+    GBP: { sym: '£', loc: 'es-ES' },
+    USD: { sym: '$',      loc: 'es-ES' }
+  };
+  var cur = 'EUR';
+  var per = 'year';
+  function perWord() { return per === 'year' ? 'al año' : 'al mes'; }
+
+  function pct(x) { return Math.round(x * 100) + '%'; }
+  function num(x) { return Math.round(x).toLocaleString(CUR[cur].loc); }
+  function money(x) { return num(x) + ' ' + CUR[cur].sym; }
+  function extraNeeded(m, d) { return d >= m ? null : m / (m - d) - 1; }
+  function canLose(m, p) { return p / (m + p); }
+
+  function readNum(el) {
+    /* es-ES formatting uses "." for thousands and "," for decimals, so strip
+       the dots before parsing or "100.000" would be read as one hundred. */
+    var raw = String(el.value).replace(/[^0-9.,]/g, '').replace(/\./g, '').replace(',', '.');
+    var n = parseFloat(raw);
+    return isFinite(n) && n > 0 ? n : null;
+  }
+  function ledger(el, rows) {
+    el.innerHTML = rows.map(function (r) {
+      return '<div><span>' + r[0] + '</span><b>' + r[1] + '</b></div>';
+    }).join('');
+  }
+  function withCol(list, v) {
+    return list.indexOf(v) >= 0 ? list : list.concat([v]).sort(function (a, b) { return a - b; });
+  }
+  function withRow(list, v) {
+    return list.indexOf(v) >= 0 ? list : list.concat([v]).sort(function (a, b) { return b - a; });
+  }
+
+  function table(el, rows, cols, mine, chosen, fn, label) {
+    var h = '<thead><tr><th scope="col">Margen bruto</th>';
+    cols.forEach(function (c) {
+      h += '<th scope="col"' + (c === chosen ? ' class="col"' : '') + '>' + label + ' ' + c + '%</th>';
+    });
+    h += '</tr></thead><tbody>';
+    rows.forEach(function (r) {
+      var you = r === mine;
+      h += '<tr' + (you ? ' class="you"' : '') + '><th scope="row">' + r + '%' +
+           (you ? '<span class="youpill">Tú</span>' : '') + '</th>';
+      cols.forEach(function (c) {
+        var v = fn(r / 100, c / 100);
+        var cls = [];
+        if (c === chosen) cls.push('col');
+        if (you && c === chosen) cls.push('hit');
+        if (v === null) {
+          cls.push('na');
+          h += '<td class="' + cls.join(' ') + '">pérdida en cada venta</td>';
+        } else {
+          h += '<td' + (cls.length ? ' class="' + cls.join(' ') + '"' : '') + '>' + pct(v) + '</td>';
+        }
+      });
+      h += '</tr>';
+    });
+    el.innerHTML = h + '</tbody>';
+  }
+
+  function render() {
+    var M = +marginEl.value, C = +changeEl.value, m = M / 100, c = C / 100;
+    $('marginOut').textContent = M;
+    $('changeOut').textContent = C;
+    Array.prototype.forEach.call(symEls, function (e) { e.textContent = CUR[cur].sym; });
+
+    var S = readNum(salesEl);
+    var A = readNum(aovEl);
+    var gp = S ? S * m : null;
+    var orders = (S && A) ? S / A : null;
+
+    /* ── lado del descuento ── */
+    $('cutTitle').textContent = 'Quitar un ' + C + '% a cada precio';
+    var x = extraNeeded(m, c);
+    var cutNote = $('cutNote');
+    if (x === null) {
+      $('cutBig').textContent = 'Sin retorno';
+      $('cutCaption').textContent = 'Un descuento del ' + C + '% está en o por encima de tu margen del ' +
+        M + '%, así que cada venta te cuesta dinero. Más ventas solo pierden más.';
+      cutNote.textContent = '';
+      cutNote.className = 'note';
+    } else {
+      $('cutBig').textContent = '+' + pct(x);
+      $('cutCaption').textContent = 'más ventas solo para quedarte igual.';
+      cutNote.textContent = 'Cada pedido tiene el mismo coste, así que un descuento del ' + C +
+        '% sale directamente del ' + M + '% que te quedas. Por eso un descuento pequeño ' +
+        'necesita un salto grande en ventas.';
+      cutNote.className = x > 0.5 ? 'note warn' : 'note';
+    }
+
+    var cutRows = [['El beneficio bruto baja', c >= m ? 'todo' : pct(c / m)]];
+    if (S) {
+      var after = S * (m - c);
+      cutRows.push(['Beneficio bruto ' + perWord(), money(gp)]);
+      cutRows.push(['Las mismas ventas, con el descuento', after < 0 ? '−' + money(-after) + ' (pérdida)' : money(after)]);
+      if (x !== null) cutRows.push(['Facturación necesaria para volver ahí', money(S * (1 - c) * (1 + x))]);
+    }
+    if (orders && x !== null) {
+      cutRows.push(['Pedidos ' + perWord(), num(orders)]);
+      cutRows.push(['Pedidos necesarios con el descuento', num(orders * (1 + x))]);
+      cutRows.push(['Pedidos extra que conseguir', '+' + num(orders * x)]);
+    }
+    ledger($('cutLedger'), cutRows);
+
+    /* ── lado de la subida de precio ── */
+    $('riseTitle').textContent = 'Añadir un ' + C + '% a cada precio';
+    var y = canLose(m, c);
+    $('riseBig').textContent = pct(y);
+    $('riseCaption').textContent = 'de tus ventas podrías perder y seguir ganando lo mismo.';
+
+    var riseRows = [['El beneficio bruto sube', pct(c / m)]];
+    if (S) {
+      riseRows.push(['Beneficio bruto ' + perWord(), money(gp)]);
+      riseRows.push(['Las mismas ventas, con la subida', money(S * (1 + c) - S * (1 - m))]);
+      riseRows.push(['Facturación que podrías perder sin salir perdiendo', money(S * y)]);
+    }
+    if (orders) {
+      riseRows.push(['Pedidos ' + perWord(), num(orders)]);
+      riseRows.push(['Pedidos que podrías perder', '−' + num(orders * y)]);
+    }
+    ledger($('riseLedger'), riseRows);
+    $('riseNote').textContent = 'Pierde menos del ' + pct(y) +
+      ' de tus pedidos y sales ganando, con tiempo libre para dar mejor servicio ' +
+      'o para encontrar a los clientes adecuados.';
+
+    table($('cutTable'), withRow(MARGINS, M), withCol(CUTS, C), M, C, extraNeeded, 'Descuento');
+    table($('riseTable'), withRow(MARGINS, M), withCol(RISES, C), M, C, canLose, 'Subida');
+
+    try {
+      localStorage.setItem(STORE, JSON.stringify({
+        m: M, c: C, s: salesEl.value, a: aovEl.value, cur: cur, per: per
+      }));
+    } catch (e) {}
+  }
+
+  function setCur(next) {
+    if (!CUR[next]) return;
+    cur = next;
+    Array.prototype.forEach.call(document.querySelectorAll('.cur-pill[data-cur]'), function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.cur === cur));
+    });
+    render();
+  }
+
+  function setPer(next) {
+    per = next === 'month' ? 'month' : 'year';
+    Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+      b.setAttribute('aria-pressed', String(b.dataset.per === per));
+    });
+    render();
+  }
+
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE) || 'null');
+    if (saved) {
+      if (saved.m) marginEl.value = saved.m;
+      if (saved.c) changeEl.value = saved.c;
+      if (saved.s) salesEl.value = saved.s;
+      if (saved.a) aovEl.value = saved.a;
+      if (saved.cur && CUR[saved.cur]) cur = saved.cur;
+      if (saved.per) per = saved.per;
+    }
+  } catch (e) {}
+
+  Array.prototype.forEach.call(document.querySelectorAll('.cur-pill[data-cur]'), function (b) {
+    b.addEventListener('click', function () { setCur(b.dataset.cur); });
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+    b.addEventListener('click', function () { setPer(b.dataset.per); });
+  });
+
+  marginEl.addEventListener('input', render);
+  changeEl.addEventListener('input', render);
+  salesEl.addEventListener('input', render);
+  aovEl.addEventListener('input', render);
+
+  [salesEl, aovEl].forEach(function (el) {
+    el.addEventListener('blur', function () {
+      var n = readNum(el);
+      el.value = n ? Math.round(n).toLocaleString(CUR[cur].loc) : '';
+      render();
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll('.per-pill'), function (b) {
+    b.setAttribute('aria-pressed', String(b.dataset.per === per));
+  });
+  setCur(cur);
+})();
+</script>
+
+</body>
+</html>
