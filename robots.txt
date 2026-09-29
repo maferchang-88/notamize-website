@@ -7,10 +7,10 @@ Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 # Legal pages are noindex at the meta level; no need to crawl them.
-Disallow: /privacy-policy.html
-Disallow: /privacy-policy-fr.html
-Disallow: /privacy-policy-es.html
-Disallow: /mentions-legales.html
+Disallow: /privacy-policy
+Disallow: /privacy-policy-fr
+Disallow: /privacy-policy-es
+Disallow: /mentions-legales
 
 # --- AI / LLM crawlers -------------------------------------------------
 # Explicitly allowed. Notamize wants to be cited by AI assistants; that is

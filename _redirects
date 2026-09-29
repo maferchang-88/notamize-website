@@ -1,3 +1,29 @@
-# Clean language paths -> real files (these previously 404'd)
-/fr   /index-fr.html   301
-/es   /index-es.html   301
+# Clean language paths -> canonical pages
+/fr   /index-fr   301
+/es   /index-es   301
+
+# Extensionless is canonical site-wide (2026-09-29).
+# Netlify serves both /page and /page.html, which split Google's signals:
+# it indexed /index-es while the canonical tag declared /index-es.html.
+# `301!` is required — without the force flag Netlify serves the existing
+# file instead of applying the redirect.
+/blog/cual-es-tu-numero-clave-es.html                 /blog/cual-es-tu-numero-clave-es               301!
+/blog/cuanto-gastar-por-cliente-nuevo-es.html         /blog/cuanto-gastar-por-cliente-nuevo-es       301!
+/blog/de-donde-viene-cada-venta-es.html               /blog/de-donde-viene-cada-venta-es             301!
+/blog/index-es.html                                   /blog/index-es                                 301!
+/blog/index.html                                      /blog/                                         301!
+/blog/llms-txt-no-citation-lift.html                  /blog/llms-txt-no-citation-lift                301!
+/blog/oferta-clara-en-5-segundos-es.html              /blog/oferta-clara-en-5-segundos-es            301!
+/blog/perfil-de-empresa-en-google-es.html             /blog/perfil-de-empresa-en-google-es           301!
+/blog/pmax-spends-on-competitor-brands.html           /blog/pmax-spends-on-competitor-brands         301!
+/blog/tres-senales-anuncios-tiran-dinero-es.html      /blog/tres-senales-anuncios-tiran-dinero-es    301!
+/blog/tu-pagina-despues-del-clic-es.html              /blog/tu-pagina-despues-del-clic-es            301!
+/index-es.html                                        /index-es                                      301!
+/index-fr.html                                        /index-fr                                      301!
+/index.html                                           /                                              301!
+/mentions-legales.html                                /mentions-legales                              301!
+/privacy-policy-es.html                               /privacy-policy-es                             301!
+/privacy-policy-fr.html                               /privacy-policy-fr                             301!
+/privacy-policy.html                                  /privacy-policy                                301!
+/tools/descuento-o-subida-de-precio-es.html           /tools/descuento-o-subida-de-precio-es         301!
+/tools/discount-or-price-rise.html                    /tools/discount-or-price-rise                  301!
