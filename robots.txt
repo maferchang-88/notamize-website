@@ -6,11 +6,10 @@ User-agent: *
 Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
-# Legal pages are noindex at the meta level; no need to crawl them.
-Disallow: /privacy-policy
-Disallow: /privacy-policy-fr
-Disallow: /privacy-policy-es
-Disallow: /mentions-legales
+# Legal pages carry <meta name="robots" content="noindex"> in their HTML.
+# They are deliberately NOT disallowed here: a blocked page cannot be read,
+# so Google would never see the noindex and could still index the bare URL.
+# Letting it crawl them is what makes the noindex take effect.
 
 # --- AI / LLM crawlers -------------------------------------------------
 # Explicitly allowed. Notamize wants to be cited by AI assistants; that is
