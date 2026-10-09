@@ -269,7 +269,6 @@ footer{background:var(--dark);color:#fff;padding:3rem 0 2rem;margin-top:3rem}
 @media(max-width:820px){
   nav{padding:.7rem 1.1rem;gap:.5rem}
   .nav-logo-img{height:62px}
-  .nav-pill{display:none}
   .tool{padding:7.5rem 1rem 3rem;gap:2rem}
   .side{padding:1.5rem 1.3rem}
   .method{padding:1.3rem 1.3rem}
@@ -284,4 +283,40 @@ footer{background:var(--dark);color:#fff;padding:3rem 0 2rem;margin-top:3rem}
   .tool{padding:0;max-width:none;gap:1.5rem}
   .side,.ctl,.table-wrap{box-shadow:none;break-inside:avoid}
   .table-wrap{overflow:visible}
+}
+
+/* ─── MOBILE NAV (hamburger) ─── */
+.nav-links{display:flex;gap:.4rem;align-items:center}
+.nav-burger{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:44px;height:44px;padding:0;margin-left:.6rem;flex:0 0 auto;
+  background:transparent;border:1px solid var(--sand);border-radius:50px;
+  cursor:pointer;transition:border-color .3s
+}
+.nav-burger:hover{border-color:var(--primary)}
+.nav-burger span{display:block;width:18px;height:2px;margin:0 auto;background:var(--dark);border-radius:2px;transition:transform .3s,opacity .2s}
+.nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media(max-width:900px){
+  nav{padding:.7rem 1.1rem}
+  .nav-logo-img{height:62px}
+  .nav-pills{flex-wrap:nowrap}
+  .nav-burger{display:flex}
+  .nav-links{
+    position:absolute;top:100%;left:0;right:0;
+    display:none;flex-direction:column;align-items:stretch;gap:0;
+    background:var(--bg);
+    border-bottom:1px solid var(--sand);padding:.4rem 1.1rem 1rem;
+    box-shadow:0 12px 28px var(--shadow);
+    max-height:calc(100vh - 90px);overflow-y:auto
+  }
+  .nav-links.open{display:flex}
+  .nav-links .nav-pill{display:block;padding:.9rem .5rem;font-size:1rem;border-radius:10px;border-bottom:1px solid var(--sand)}
+  .nav-links .nav-pill:last-child{border-bottom:none}
+}
+@media(max-width:420px){
+  .nav-cta{padding:.5rem 1rem;font-size:.76rem;margin-left:.35rem}
+  .lang-switcher{margin-right:.25rem}
+  .lang-pill{padding:.3rem .5rem;font-size:.7rem}
 }

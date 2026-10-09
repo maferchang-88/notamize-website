@@ -124,12 +124,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="/tools/discount-or-price-rise" class="lang-pill active">EN</a>
       <a href="/tools/descuento-o-subida-de-precio-es" class="lang-pill">ES</a>
     </div>
+    <div class="nav-links" id="nav-links">
     <a href="/#services" class="nav-pill">Services</a>
     <a href="/#process" class="nav-pill">Process</a>
     <a href="/#results" class="nav-pill">Results</a>
     <a href="/blog/" class="nav-pill">Blog</a>
     <a href="/#contact" class="nav-pill">Contact</a>
+    </div>
     <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank" rel="noopener">Free Audit</a>
+    <button class="nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
@@ -484,5 +487,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 })();
 </script>
 
+<script>
+(function(){
+  var b=document.getElementById('nav-burger'),m=document.getElementById('nav-links');
+  if(!b||!m)return;
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){
+    var open=!m.classList.contains('open');
+    m.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+  m.addEventListener('click',function(e){if(e.target.closest('a'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){close();b.focus();}});
+  window.addEventListener('resize',function(){if(window.innerWidth>900)close();});
+})();
+</script>
 </body>
 </html>
