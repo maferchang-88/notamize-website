@@ -1,0 +1,355 @@
+<!doctype html>
+<meta charset="utf-8">
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── SEO ──
+     noindex deliberado: esta página es un enlace que se manda a un cliente
+     concreto, no una página para posicionar. Dejarla fuera del índice también
+     reduce el spam en el formulario. Quitar el noindex si algún día se enlaza
+     desde el sitio. Por lo mismo no está en sitemap.xml. -->
+<meta name="robots" content="noindex,follow">
+<title>Deja tu opinión | Notamize</title>
+<meta name="description" content="Cuéntame cómo fue trabajar con Notamize. Dos minutos: una valoración de 1 a 5 estrellas y un par de frases.">
+<link rel="canonical" href="https://www.notamize.com/opinion-es">
+<!-- Añade hreflang cuando existan /review (EN) y /avis-fr (FR). -->
+
+<!-- ── Open Graph ── -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:title" content="¿Cómo fue trabajar con Notamize?">
+<meta property="og:description" content="Dos minutos: una valoración de 1 a 5 estrellas y un par de frases.">
+<meta property="og:url" content="https://www.notamize.com/opinion-es">
+<meta property="og:image" content="https://www.notamize.com/notamize-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ── Axeptio Consent Manager (debe cargar ANTES que GTM) ── -->
+<script>
+window.axeptioSettings = {
+  clientId: "69c449a72612765225d1d6ff",
+  cookiesVersion: "2ee32c34-ad6a-48c0-b23c-20c539e00de7",
+  googleConsentMode: {
+    default: {
+      analytics_storage: "denied",
+      ad_storage: "denied",
+      ad_user_data: "denied",
+      ad_personalization: "denied",
+      wait_for_update: 500
+    }
+  }
+};
+(function(d, s) {
+  var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
+  e.async = true; e.src = "//static.axept.io/sdk.js";
+  t.parentNode.insertBefore(e, t);
+})(document, "script");
+</script>
+<!-- End Axeptio -->
+
+<!-- ── Google Tag Manager ── -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TZFLCBDG');</script>
+<!-- End Google Tag Manager -->
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/tools/tool.css">
+
+<style>
+/* Específico de esta página. Tokens heredados de tool.css; el ámbar de las
+   estrellas es el único valor nuevo, elegido en el borrador del 5-10-2026
+   (la alternativa era --cyan). */
+:root{--star:#E0A43B}
+
+.op{max-width:38rem;margin:0 auto;padding:11rem 1.5rem 4rem;display:grid;gap:1.6rem}
+.op-head{display:grid;gap:.9rem;justify-items:start}
+.op-head h1{font-size:clamp(1.9rem,5vw,2.7rem);font-weight:600;line-height:1.15}
+.op-head p{color:var(--muted);font-size:1rem;line-height:1.65}
+
+form.rv{display:grid;gap:1.5rem}
+.field{display:grid;gap:.5rem}
+.field>label,.legend{
+  font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)
+}
+.field .opt{
+  font-size:.6rem;font-weight:500;letter-spacing:.06em;color:var(--muted);background:var(--beige);
+  border:1px solid var(--sand);border-radius:50px;padding:.1rem .45rem;margin-left:.4rem
+}
+.field input[type=text],.field input[type=url],.field textarea{
+  font:inherit;font-size:.95rem;font-weight:300;color:var(--dark);background:#fff;
+  border:1px solid var(--sand);border-radius:12px;padding:.8rem .95rem;width:100%;
+  transition:border-color .25s
+}
+.field textarea{min-height:8.5rem;resize:vertical;line-height:1.65}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--primary)}
+.field input::placeholder,.field textarea::placeholder{color:#A8B6C2}
+.hint{font-size:.82rem;color:var(--muted);line-height:1.55}
+
+/* Estrellas: radios reales, para que la valoración se envíe aunque falle el JS. */
+.rate{
+  display:grid;gap:.6rem;background:var(--beige);border:1px solid var(--sand);
+  border-radius:16px;padding:1.3rem 1.4rem
+}
+.stars{display:flex;gap:.25rem}
+.stars input{position:absolute;opacity:0;width:0;height:0}
+.stars label{line-height:0;cursor:pointer;padding:.1rem;border-radius:6px;display:block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.stars svg{width:2.5rem;height:2.5rem;display:block}
+.stars svg path{fill:#D8E0E8;transition:fill .18s,transform .18s}
+.stars label:hover svg path{transform:scale(1.06)}
+.stars label.on svg path{fill:var(--star)}
+.stars input:focus-visible+label{outline:2px solid var(--primary);outline-offset:2px}
+.rate-out{
+  font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600;color:var(--dark);
+  min-height:1.6em;display:flex;align-items:baseline;gap:.55rem
+}
+.rate-out small{font-family:'Jost',sans-serif;font-size:.82rem;font-weight:400;color:var(--muted)}
+.rate-out.empty{font-family:'Jost',sans-serif;font-size:1rem;font-weight:300;color:var(--muted)}
+
+.consent{
+  display:flex;gap:.7rem;align-items:flex-start;background:#fff;
+  border:1px solid var(--sand);border-radius:12px;padding:.95rem 1.05rem
+}
+.consent input{width:1.15rem;height:1.15rem;margin-top:.15rem;accent-color:var(--primary);flex:none}
+.consent label{font-size:.85rem;color:var(--muted);line-height:1.6}
+
+.submit{
+  font:inherit;font-size:.92rem;font-weight:500;color:#fff;background:var(--primary);
+  border:none;border-radius:50px;padding:.85rem 2rem;cursor:pointer;justify-self:start;
+  box-shadow:0 2px 12px rgba(43,90,124,.22);transition:background .25s,transform .25s,box-shadow .25s
+}
+.submit:hover{background:var(--primary-lt);transform:translateY(-1px);box-shadow:0 4px 20px rgba(43,90,124,.33)}
+.submit[disabled]{opacity:.6;cursor:progress;transform:none}
+.msg{
+  display:grid;gap:.5rem;background:#fff;border:1px solid var(--sand);
+  border-left:4px solid var(--primary);border-radius:12px;padding:1.3rem 1.4rem
+}
+.msg b{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--dark)}
+.msg p{font-size:.88rem;color:var(--muted)}
+.msg[hidden]{display:none}
+.msg.bad{border-left-color:var(--magenta)}
+.msg.bad a{color:var(--primary)}
+
+/* Honeypot: invisible para personas, visible para bots. */
+.hp{position:absolute;left:-9999px;opacity:0}
+
+.alt{padding-top:1.9rem;border-top:1px solid var(--sand);display:grid;gap:.9rem}
+.alt-lbl{font-size:.68rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.alt-row{display:grid;grid-template-columns:auto 1fr;gap:1rem;align-items:start}
+.alt-ico{
+  width:2.3rem;height:2.3rem;border-radius:9px;flex:none;background:#0A66C2;
+  display:flex;align-items:center;justify-content:center
+}
+.alt-ico svg{width:1.3rem;height:1.3rem;fill:#fff}
+.alt-txt{display:grid;gap:.5rem;min-width:0;justify-items:start}
+.alt-txt h2{font-size:1.15rem;font-weight:600}
+.alt-txt p{font-size:.86rem;color:var(--muted);line-height:1.65}
+.alt-cta{
+  font-size:.88rem;font-weight:500;color:var(--primary);text-decoration:none;
+  border-bottom:1px solid var(--sand);padding-bottom:.08rem;transition:border-color .25s
+}
+.alt-cta:hover{border-bottom-color:var(--primary)}
+.alt-step{font-size:.78rem;color:var(--muted)}
+
+@media(max-width:900px){.op{padding-top:7rem}}
+@media(max-width:620px){.op{padding-left:1rem;padding-right:1rem}.stars svg{width:2.1rem;height:2.1rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZFLCBDG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<nav>
+  <a href="/index-es"><img src="/notamize-logo.png" alt="Notamize" class="nav-logo-img"></a>
+  <div class="nav-pills">
+    <!-- Sin conmutador de idioma hasta que existan /review y /avis-fr. -->
+    <div class="nav-links" id="nav-links">
+    <a href="/index-es#servicios" class="nav-pill">Servicios</a>
+    <a href="/index-es#proceso" class="nav-pill">Proceso</a>
+    <a href="/index-es#results" class="nav-pill">Resultados</a>
+    <a href="/blog/index-es" class="nav-pill">Blog</a>
+    <a href="/index-es#contact" class="nav-pill">Contacto</a>
+    </div>
+    <a href="https://tidycal.com/maferchang/30-minute-meeting" class="nav-cta" target="_blank" rel="noopener">Auditoría Gratis</a>
+    <button class="nav-burger" id="nav-burger" type="button" aria-label="Menú" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main class="op">
+
+  <nav class="crumbs" aria-label="Migas de pan">
+    <a href="/index-es">Inicio</a> <span aria-hidden="true">›</span>
+    <span aria-current="page">Deja tu opinión</span>
+  </nav>
+
+  <header class="op-head">
+    <span class="tag">Opinión de cliente</span>
+    <h1>¿Cómo fue trabajar con Notamize?</h1>
+    <p>Dos minutos. Tu opinión ayuda a otros negocios a decidir si encajamos — y a mí a saber qué está funcionando.</p>
+  </header>
+
+  <form class="rv" id="rvform" name="opinion-es" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="opinion-es">
+    <p class="hp"><label>No rellenes esto: <input name="bot-field"></label></p>
+
+    <fieldset class="rate">
+      <legend class="legend">¿Cómo calificarías el trabajo?</legend>
+      <div class="stars" id="stars">
+        <input type="radio" id="s1" name="estrellas" value="1" required><label for="s1" title="1 de 5"><span class="sr">1</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+        <input type="radio" id="s2" name="estrellas" value="2"><label for="s2" title="2 de 5"><span class="sr">2</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+        <input type="radio" id="s3" name="estrellas" value="3"><label for="s3" title="3 de 5"><span class="sr">3</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+        <input type="radio" id="s4" name="estrellas" value="4"><label for="s4" title="4 de 5"><span class="sr">4</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+        <input type="radio" id="s5" name="estrellas" value="5"><label for="s5" title="5 de 5"><span class="sr">5</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+      </div>
+      <div class="rate-out empty" id="rateout" aria-live="polite">Elige de 1 a 5 estrellas</div>
+    </fieldset>
+
+    <div class="field">
+      <label for="opinion">¿Qué destacarías?</label>
+      <textarea id="opinion" name="opinion" required placeholder="Lo que más te sirvió, qué cambió en tu negocio, cómo fue trabajar juntas…"></textarea>
+      <span class="hint">Escribe como hablas. Dos o tres frases son suficientes.</span>
+    </div>
+
+    <div class="field">
+      <label for="nombre">Nombre y apellido</label>
+      <input type="text" id="nombre" name="nombre" required autocomplete="name">
+    </div>
+
+    <div class="field">
+      <label for="rol">Tu rol y tu negocio</label>
+      <input type="text" id="rol" name="rol" required placeholder="Coach ontológica, Dordrecht">
+    </div>
+
+    <div class="field">
+      <label for="enlace">Perfil de LinkedIn o sitio web <span class="opt">opcional</span></label>
+      <input type="url" id="enlace" name="enlace" placeholder="https://linkedin.com/in/… o tusitio.com">
+      <span class="hint">Opcional. Si dejas uno, tu opinión lleva un enlace: tu perfil de LinkedIn o tu propio sitio, el que prefieras.</span>
+    </div>
+
+    <div class="consent">
+      <input type="checkbox" id="permiso" name="permiso" value="si" required>
+      <label for="permiso">Autorizo a Notamize a publicar esta opinión, con mi nombre y rol, en notamize.com.</label>
+    </div>
+
+    <button type="submit" class="submit" id="send">Enviar mi opinión</button>
+  </form>
+
+  <div class="msg" id="done" hidden>
+    <b>¡Gracias! Recibí tu opinión.</b>
+    <p>La leo, te aviso antes de publicarla, y si quieres cambiar algo me escribes.</p>
+  </div>
+
+  <div class="msg bad" id="fail" hidden>
+    <b>No se pudo enviar.</b>
+    <p>Perdón por eso. ¿Me la mandas por email a <a href="mailto:info@notamize.com">info@notamize.com</a>? Llega igual.</p>
+  </div>
+
+  <section class="alt">
+    <span class="alt-lbl">O, si prefieres, en público</span>
+    <div class="alt-row">
+      <span class="alt-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 21h4V9H3v12zM10 21h4v-6.5c0-1.7.7-2.6 2-2.6s2 .9 2 2.6V21h4v-7c0-3.3-1.8-5-4.3-5-1.6 0-2.5.6-3.2 1.6l-.5-1.6H10V21z"/></svg>
+      </span>
+      <div class="alt-txt">
+        <h2>Dejarla como recomendación en LinkedIn</h2>
+        <p>El formulario de arriba queda entre nosotras hasta que yo la publique. Una recomendación en LinkedIn es pública desde el momento en que la escribes, y queda también en tu perfil. No lleva estrellas, pero la puedo mostrar en el sitio igual que las otras.</p>
+        <a class="alt-cta" href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank" rel="noopener">Ir a mi perfil →</a>
+        <span class="alt-step">En mi perfil: botón «Más» → «Recomendar»</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <img src="/notamize-logo.png" alt="Notamize" class="footer-logo-img">
+      <div class="footer-links">
+        <a href="/index-es">Inicio</a>
+        <a href="/blog/index-es">Blog</a>
+        <a href="https://www.linkedin.com/in/maria-fernanda-chang-92967751/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:info@notamize.com">Email</a>
+        <a href="https://www.instagram.com/notamize/" target="_blank" rel="noopener">Instagram</a>
+        <a href="/privacy-policy-es">Política de privacidad</a>
+        <a href="/mentions-legales">Mentions légales</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Notamize</span>
+      <div class="footer-partners">
+        <span class="footer-partners-label">Miembro de</span>
+        <a href="https://www.ppcmastery.com/hub" target="_blank" rel="noopener"><img src="/ppc-hub-logo.jpeg" alt="The PPC Hub" class="footer-partner-logo"></a>
+        <a href="https://ads2ai.com/maferchang?ref=MAFERCHANG" target="_blank" rel="noopener"><img src="/adstoai-logo.png" alt="Ads to AI" class="footer-partner-logo"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  /* ── estrellas ── */
+  var WORDS = ['Muy malo', 'Malo', 'Bien', 'Muy bien', 'Excelente'];
+  var box = document.getElementById('stars');
+  var out = document.getElementById('rateout');
+  var radios = box.querySelectorAll('input');
+  var labels = box.querySelectorAll('label');
+
+  function paint() {
+    var n = 0;
+    radios.forEach(function (r, i) { if (r.checked) n = i + 1; });
+    labels.forEach(function (l, i) { l.classList.toggle('on', i < n); });
+    if (!n) return;
+    out.classList.remove('empty');
+    out.innerHTML = WORDS[n - 1] + ' <small>' + n + ' de 5</small>';
+  }
+  radios.forEach(function (r) { r.addEventListener('change', paint); });
+  paint();
+
+  /* ── envío por AJAX a Netlify Forms, para no perder la página ── */
+  var form = document.getElementById('rvform');
+  var btn = document.getElementById('send');
+  form.addEventListener('submit', function (e) {
+    if (!form.checkValidity()) return;          /* deja que el navegador avise */
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+    fetch('/opinion-es', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      form.hidden = true;
+      document.getElementById('done').hidden = false;
+    }).catch(function () {
+      btn.disabled = false;
+      btn.textContent = 'Enviar mi opinión';
+      document.getElementById('fail').hidden = false;
+    });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var b=document.getElementById('nav-burger'),m=document.getElementById('nav-links');
+  if(!b||!m)return;
+  function close(){m.classList.remove('open');b.setAttribute('aria-expanded','false');}
+  b.addEventListener('click',function(){
+    var open=!m.classList.contains('open');
+    m.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+  m.addEventListener('click',function(e){if(e.target.closest('a'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.classList.contains('open')){close();b.focus();}});
+  window.addEventListener('resize',function(){if(window.innerWidth>900)close();});
+})();
+</script>
+</body>
+</html>
