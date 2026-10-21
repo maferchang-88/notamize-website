@@ -62,7 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 /* Específico de esta página. Tokens heredados de tool.css; el ámbar de las
    estrellas es el único valor nuevo, elegido en el borrador del 5-10-2026
    (la alternativa era --cyan). */
-:root{--star:#E0A43B}
+:root{--star:#E0A43B;--magenta:#E040A0}
 
 .op{max-width:38rem;margin:0 auto;padding:11rem 1.5rem 4rem;display:grid;gap:1.6rem}
 .op-head{display:grid;gap:.9rem;justify-items:start}
@@ -108,6 +108,11 @@ form.rv{display:grid;gap:1.5rem}
 }
 .rate-out small{font-family:'Jost',sans-serif;font-size:.82rem;font-weight:400;color:var(--muted)}
 .rate-out.empty{font-family:'Jost',sans-serif;font-size:1rem;font-weight:300;color:var(--muted)}
+/* El aviso de la valoración se pinta aquí, no con el validador del navegador:
+   los radios miden 0x0, así que Chrome no puede enfocarlos ni anclarles su
+   globo, y el envío se bloqueaba sin decir nada. Visto 2026-10-21. */
+.rate-err{font-size:.84rem;font-weight:500;color:var(--magenta);margin:0}
+.rate-err[hidden]{display:none}
 
 .consent{
   display:flex;gap:.7rem;align-items:flex-start;background:#fff;
@@ -200,13 +205,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <fieldset class="rate">
       <legend class="legend">¿Cómo calificarías el trabajo?</legend>
       <div class="stars" id="stars">
-        <input type="radio" id="s1" name="estrellas" value="1" required><label for="s1" title="1 de 5"><span class="sr">1</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
+        <input type="radio" id="s1" name="estrellas" value="1"><label for="s1" title="1 de 5"><span class="sr">1</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
         <input type="radio" id="s2" name="estrellas" value="2"><label for="s2" title="2 de 5"><span class="sr">2</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
         <input type="radio" id="s3" name="estrellas" value="3"><label for="s3" title="3 de 5"><span class="sr">3</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
         <input type="radio" id="s4" name="estrellas" value="4"><label for="s4" title="4 de 5"><span class="sr">4</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
         <input type="radio" id="s5" name="estrellas" value="5"><label for="s5" title="5 de 5"><span class="sr">5</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.6l2.9 6.0 6.6.9-4.8 4.6 1.2 6.5L12 17.6 6.1 20.6l1.2-6.5L2.5 9.5l6.6-.9z"/></svg></label>
       </div>
       <div class="rate-out empty" id="rateout" aria-live="polite">Elige de 1 a 5 estrellas</div>
+      <p class="rate-err" id="rateerr" role="alert" hidden>Elige una valoración de 1 a 5 estrellas antes de enviar.</p>
     </fieldset>
 
     <div class="field">
@@ -299,12 +305,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var out = document.getElementById('rateout');
   var radios = box.querySelectorAll('input');
   var labels = box.querySelectorAll('label');
+  var rateErr = document.getElementById('rateerr');
 
   function paint() {
     var n = 0;
     radios.forEach(function (r, i) { if (r.checked) n = i + 1; });
     labels.forEach(function (l, i) { l.classList.toggle('on', i < n); });
     if (!n) return;
+    rateErr.hidden = true;
     out.classList.remove('empty');
     out.innerHTML = WORDS[n - 1] + ' <small>' + n + ' de 5</small>';
   }
@@ -315,6 +323,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var form = document.getElementById('rvform');
   var btn = document.getElementById('send');
   form.addEventListener('submit', function (e) {
+    if (!box.querySelector('input:checked')) {   /* el validador no puede avisar de esto */
+      e.preventDefault();
+      rateErr.hidden = false;
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
     if (!form.checkValidity()) return;          /* deja que el navegador avise */
     e.preventDefault();
     btn.disabled = true;
