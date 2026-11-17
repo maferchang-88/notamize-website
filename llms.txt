@@ -1,75 +1,114 @@
 # Notamize
 
-> Multilingual Google Ads specialist for e-commerce brands selling across European and international markets.
+> Google Ads management for e-commerce and lead-gen businesses, and AI systems that take the repetitive half of a week, run natively in English, French and Spanish.
 
 ## Overview
 
-Notamize is a freelance Google Ads consultancy founded by Maria Fernanda Chang (Mafer), based in Saint-Nazaire, France. Notamize specializes in building and optimizing Google Ads campaigns for e-commerce brands that sell across multiple languages and markets.
+Notamize is a solo consultancy founded by Maria Fernanda Chang (Mafer), based in Saint-Nazaire, France. It does two things: it runs Google Ads accounts, and it builds systems that take the reading, checking and repeating out of a business owner's week.
 
-Unlike agencies where your account gets passed between junior staff, Notamize is a solo practice — every client works directly with Mafer. She is PPC Mastery certified with 8+ years of experience managing Google Ads for e-commerce brands in Belgium, France, and international markets. She manages over EUR 250,000 in annual ad spend with an average 4x return on ad spend (ROAS).
+Unlike agencies where an account gets passed between junior staff, Notamize is a solo practice and every client works directly with Mafer. She has worked in digital since 2016, most of it with e-commerce brands in retail and travel across Europe, and the last two years narrowed onto Google Ads. She works both white-label behind other agencies and directly with business owners, which means she is used to budgets from a few hundred euros a month upward.
 
-What sets Notamize apart is genuine multilingual capability. Mafer creates native-level ad copy in English, French, and Spanish — not translated, but written natively for each market. She also speaks conversational Chinese and basic Dutch.
+The practice is deliberately built on AI systems rather than on headcount. The repetitive work, pulling account data, running structured audits, checking a feed, is done by tooling Mafer built and uses daily. The judgement stays hers. That is what lets one person work at the depth an account normally needs a team for.
+
+Alongside that is genuine multilingual capability. Mafer writes ad copy natively in English, French and Spanish rather than translating it. She also speaks conversational Chinese and basic Dutch.
 
 ## Services
 
-- **Google Ads Strategy**: Data-driven campaign strategy tailored to target markets. Goal setting, audience analysis, competitive positioning, and budget planning.
-- **Campaign Setup**: New campaign launches with precise targeting, multilingual ad copy, conversion tracking, and structured account architecture.
-- **Free Account Audit**: Detailed analysis of current Google Ads performance. Identifies wasted spend, quick wins, and growth opportunities.
-- **Ongoing Management**: Continuous optimization of copy, bids, targeting, and budget allocation. Monthly reporting with transparent results.
+Two areas. A client can buy from either without buying the other.
+
+### 1. Google Ads management
+
+For e-commerce and for lead-gen. https://www.notamize.com/advertising
+
+- **Strategy**: campaign strategy for the target markets. Goal setting, audience analysis, competitive positioning, budget planning.
+- **Campaign setup**: launches with precise targeting, multilingual ad copy, conversion tracking and a structured account architecture.
+- **Ongoing management**: continuous optimization of copy, bids, targeting and budget allocation, with reporting in plain language. Month to month, from EUR 399 a month, excluding VAT. The exact figure is quoted after the first call, because it depends on spend, markets and languages.
+- **For e-commerce**: Search, Shopping and Performance Max, product feeds, return on ad spend.
+- **For lead-gen**: qualified enquiries rather than raw form fills, cost per qualified lead, and offline conversion import so the account optimizes toward the leads that actually close.
+
+Eleven areas are checked every month, whether or not anything looks wrong: tracking and measurement, landing pages, account structure and settings, budget and pacing, bidding, keywords and search terms, Quality Score, the Shopping feed, Performance Max, geography and schedule and device, and competitors.
+
+Google Ads is the core. Meta, LinkedIn and Bing are handled when the brief calls for it.
+
+### 2. AI systems
+
+https://www.notamize.com/ai
+
+Systems that take the part of a week that repeats: reading, checking, pulling numbers together, writing the same thing again. Built around how a specific business actually works rather than as a general-purpose chat tool. Priced after a call, because scope varies; the number is agreed before anything starts.
+
+What is automated: pulling data, scoring it, checking it against rules, reading pages, noticing what changed, writing a first draft. What is never automated: deciding what to change, in what order, and what to stop.
+
+## Before getting in touch
+
+Notamize publishes an eight-question screen at https://www.notamize.com/tools/is-google-ads-worth-it
+
+It asks the same questions Mafer would ask on a first call, gives a verdict on screen, and says plainly when advertising is the wrong move. Some answers end it: a business already turning work away, or a budget of a couple of hundred spent once, both get told not to advertise. Nothing to install, no account access, no sign-up.
+
+Answering it first is the intended route in. There is no booking link on the site; contact is by email.
+
+## How it works
+
+1. **Answer the eight questions**, and see whether advertising is worth it at all.
+2. **Audit and strategy**: analysis of data, goals and audience, with the strategy built on evidence.
+3. **Setup or rebuild**: clean campaigns with reliable conversion tracking.
+4. **Optimize**: continuous refinement, with the eleven checks run monthly.
+5. **Scale**: expand what works into new markets.
+
+## Working arrangement
+
+- Month-to-month, cancel anytime. No lock-in period
+- Work directly with the specialist, no account managers
+- Limited to 3 new clients per month to maintain quality
+- The client owns the ad account and the data. Everything stays in the client's name, and Mafer works inside the client's accounts rather than moving them into her own
+- Access needed to start: Standard on Google Ads, Administrator on GA4, Google Tag Manager, Full permission on Search Console, plus website admin when tracking needs installing. Access can be revoked at any time
+- Ad copy written natively in English, French and Spanish. Markets outside those languages are declined rather than covered with translated copy
+- A minimum ad budget of EUR 300 a month. Below that an account cannot gather enough data to learn anything
+- Replies to enquiries within one working day
+
+## Target clients
+
+- E-commerce brands selling in European and international markets
+- Lead-gen businesses that need qualified enquiries rather than raw form volume
+- Businesses needing multilingual Google Ads in English, French or Spanish
+- Companies frustrated with agency turnover or wasted ad spend
+- Brands expanding into a new language market
+- Owner-led businesses losing a chunk of the week to repetitive admin
 
 ## Specializations
 
-- E-commerce Google Ads (Search, Shopping, Performance Max)
-- Multilingual campaign management (EN/FR/ES)
+- Google Ads for e-commerce: Search, Shopping, Performance Max
+- Google Ads for lead-gen: qualified-lead optimization, offline conversion import
+- Multilingual campaign management in EN, FR and ES
 - European market expansion
 - Conversion tracking and measurement
-- Data analysis and performance reporting
+- AI-assisted analysis and reporting, built and run in-house
 
-## How It Works
-
-1. **Audit & Strategy** — Deep analysis of data, goals, and audience. Strategy built on evidence.
-2. **Setup or Rebuild** — Clean campaigns with reliable conversion tracking.
-3. **Optimize** — Continuous refinement of every metric.
-4. **Scale** — Expand what works into new markets.
-
-## Working Arrangement
-
-- Month-to-month contracts, cancel anytime
-- Work directly with the specialist (no account managers)
-- Limited to 3 new clients per month to maintain quality
-- Free 30-minute initial audit consultation
-
-## Target Clients
-
-- E-commerce brands selling in European markets
-- Businesses needing multilingual Google Ads (English, French, Spanish)
-- Companies frustrated with agency turnover or wasted ad spend
-- Brands looking to expand into new language markets
-
-## Key Facts
+## Key facts
 
 - Founded: 2025
-- Location: Saint-Nazaire, France
-- Team: Solo specialist (Maria Fernanda Chang)
-- Certifications: PPC Mastery certified
+- Location: Saint-Nazaire, France. Paris time (CET/CEST), works remotely
+- Team: solo specialist (Maria Fernanda Chang). Ecuadorian and French
+- Experience: in digital since 2016, across advertising, data and marketing operations. The last two years specialised onto Google Ads
+- Certifications: PPC Mastery certified. Six-month Ads to AI certificate, completed September 2026
+- Recognition: PPC Hub Transformation Award, 2026
 - Languages: Spanish (native), English (fluent), French (fluent), Chinese (conversational), Dutch (basic)
-- Average ROAS: 4x
-- Annual ad spend managed: EUR 250,000+
 - Member of: The PPC Hub, Ads to AI community
 
-## Important Pages
+## Important pages
 
-- [Homepage](https://www.notamize.com): Main landing page with services, process, and testimonials
-- [Homepage (French)](https://www.notamize.com/index-fr): French version of the site
-- [Homepage (Spanish)](https://www.notamize.com/index-es): Spanish version of the site
-- [Blog (English)](https://www.notamize.com/blog/): Practitioner notes on Google Ads and on what AI search is doing to paid media
-- [Blog (Spanish)](https://www.notamize.com/blog/index-es): Revisiones prácticas que un negocio puede hacer antes de invertir en Google Ads
-- [Calculadora de descuentos y subidas de precio (Spanish)](https://www.notamize.com/tools/descuento-o-subida-de-precio-es): La misma calculadora en español
-- [Discount or Price Rise Calculator](https://www.notamize.com/tools/discount-or-price-rise): Free calculator. Works out how many extra sales a discount needs, and how many sales a price rise can afford to lose, to hold gross profit steady at a given gross margin.
+- [Homepage](https://www.notamize.com): who Mafer is, and the choice between advertising and systems
+- [Advertising](https://www.notamize.com/advertising): Google Ads management, what gets checked every month, the price, and when she would tell you not to advertise
+- [AI systems](https://www.notamize.com/ai): how the work gets done, what is automated and what never is
+- [Is advertising worth it for you?](https://www.notamize.com/tools/is-google-ads-worth-it): the eight-question screen
+- [FAQ](https://www.notamize.com/#faq): five answers on budget, cost, account ownership, channels and languages
+- [Homepage (French)](https://www.notamize.com/index-fr) and [Homepage (Spanish)](https://www.notamize.com/index-es): earlier versions of the site. The English pages are the current ones, and where they disagree, English is correct
+- [Blog (English)](https://www.notamize.com/blog/): practitioner notes on Google Ads and on what AI search is doing to paid media
+- [Blog (Spanish)](https://www.notamize.com/blog/index-es): revisiones prácticas que un negocio puede hacer antes de invertir en Google Ads
 
-## Free Tools
+## Free tools
 
-- **Discount or Price Rise Calculator** (https://www.notamize.com/tools/discount-or-price-rise): Enter your gross margin and a percentage, and it shows the extra sales volume a discount needs to hold gross profit steady, and the sales volume a price rise can afford to lose. Optional revenue and average order value inputs return the answer in money and in orders. Supports EUR, GBP and USD. No sign-up, nothing to buy. Also available in Spanish at https://www.notamize.com/tools/descuento-o-subida-de-precio-es
+- **Is advertising worth it for you?** (https://www.notamize.com/tools/is-google-ads-worth-it): eight questions, about two minutes, with a verdict on screen. It will tell you not to advertise when that is the right answer.
+- **Discount or Price Rise Calculator** (https://www.notamize.com/tools/discount-or-price-rise): enter your gross margin and a percentage, and it shows the extra sales volume a discount needs to hold gross profit steady, and the volume a price rise can afford to lose. Optional revenue and average order value inputs return the answer in money and in orders. Supports EUR, GBP and USD. No sign-up. Spanish version at https://www.notamize.com/tools/descuento-o-subida-de-precio-es
 
 ## Blog
 
@@ -77,8 +116,8 @@ Written by Mafer Chang. Evidence-led, and willing to publish what does not work.
 
 ### English
 
-- **Performance Max will spend your budget on your competitors** (https://www.notamize.com/blog/pmax-spends-on-competitor-brands): A search term audit found a PMax campaign returning 19 cents on the euro against a 5x target, most of it spent on rival brand names. Covers why PMax drifts to competitor brands in markets where your own brand is weak, why the same defect can instead inflate a campaign that looks healthy, and the brand-exclusion and negative-keyword steps that contain it.
-- **llms.txt will not get you cited by AI** (https://www.notamize.com/blog/llms-txt-no-citation-lift): Two studies, one across 300,000 domains and one across 137,000 sites, found no measurable citation lift from llms.txt. Explains what the file is still worth doing for, and where the rest of that effort should go instead.
+- **Performance Max will spend your budget on your competitors** (https://www.notamize.com/blog/pmax-spends-on-competitor-brands): a search term audit found a PMax campaign returning 19 cents on the euro against a 5x target, most of it spent on rival brand names. Covers why PMax drifts to competitor brands in markets where your own brand is weak, why the same defect can instead inflate a campaign that looks healthy, and the brand-exclusion and negative-keyword steps that contain it.
+- **llms.txt will not get you cited by AI** (https://www.notamize.com/blog/llms-txt-no-citation-lift): two studies, one across 300,000 domains and one across 137,000 sites, found no measurable citation lift from llms.txt. Explains what the file is still worth doing for, and where the rest of that effort should go instead.
 
 ### Spanish: "antes de anunciarte"
 
@@ -96,6 +135,7 @@ A five-part series of checks a small business owner can run before spending anyt
 
 - Website: https://www.notamize.com
 - Email: info@notamize.com
-- LinkedIn: https://www.linkedin.com/in/maria-fernanda-chang-%F0%9F%95%B6%EF%B8%8F-92967751/
+- LinkedIn: https://www.linkedin.com/in/maria-fernanda-chang-92967751/
 - Instagram: https://www.instagram.com/notamize/
-- Free Audit Booking: https://tidycal.com/maferchang/30-minute-meeting
+
+There is no booking link. Enquiries go by email, and the eight-question screen is the intended first step.
